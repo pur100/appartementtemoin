@@ -148,10 +148,7 @@
         </div>
       {%- endif -%}
 
-      <div class="Footer__Copyright">
-        <a href="{{ routes.root_url }}" class="Footer__StoreName Heading u-h7 Link Link--secondary">© {{ shop.name }}</a>
-        <p class="Footer__ThemeAuthor">{{ powered_by_link }}</p>
-      </div>
+
 
       {%- if section.settings.show_payment_methods -%}
         {%- capture payment_methods -%}
@@ -166,6 +163,11 @@
           </ul>
         {%- endif -%}
       {%- endif -%}
+    </div>
+    <div id="footer_title">appartement témoin</div>
+    <div class="Footer__Copyright">
+      <a href="{{ routes.root_url }}" class="Footer__StoreName Heading u-h7 Link Link--secondary">© {{ shop.name }}</a>
+      <p class="Footer__ThemeAuthor">{{ powered_by_link }}</p>
     </div>
   </div>
 </footer>
@@ -242,6 +244,7 @@
     {
       "type": "links",
       "name": "Links",
+      "limit": 9,
       "settings": [
         {
           "type": "link_list",

@@ -43,3 +43,5 @@
 //     dots[i].addEventListener('mouseleave', removeActiveToShop, false);
 
 // }
+
+fitText(document.getElementById("h1"), 0.38);

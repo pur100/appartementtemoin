@@ -23,7 +23,6 @@
           <button class="RoundButton RoundButton--small RoundButton--flat" data-action="open-product-zoom">{% render 'icon' with 'plus' %}</button>
         </div>
       {%- endif -%}
-
       {%- if section.settings.show_share_buttons -%}
         <div class="Product__ActionItem hidden-lap-and-up">
           <button class="RoundButton RoundButton--small RoundButton--flat" data-action="toggle-social-share" data-animate-bottom aria-expanded="false">
@@ -42,9 +41,7 @@
             <a class="Product__ShareItem" href="https://twitter.com/share?{% if twitter_text != blank %}text={{twitter_text}}&{% endif %}url={{ share_url }}" target="_blank" rel="noopener">{%- render 'icon' with 'twitter' -%} Twitter</a>
           </div>
 
-          <div class="shipping">
-            <span>paiement et livraisons sécurisés</span>
-          </div>
+
         </div>
       {%- endif -%}
     {%- endcapture -%}
@@ -297,6 +294,10 @@
                 {{ product.description | replace: 'data-section-type', 'data-section-type-placeholder' }}
               </div>
 
+              <div class="shipping">
+                <span>paiement et livraisons sécurisés</span>
+              </div>
+
               {%- if section.settings.show_share_buttons -%}
                 <div class="ProductMeta__ShareButtons hidden-pocket">
                   <span class="ProductMeta__ShareTitle Heading Text--subdued u-h7">{{ 'product.form.share' | t }}</span>
@@ -313,6 +314,8 @@
                   </div>
                 </div>
               {%- endif -%}
+
+
             </div>
           {%- endif -%}
 

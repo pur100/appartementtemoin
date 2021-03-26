@@ -1,8 +1,15 @@
 {%- assign collection_image = block.settings.image | default: collection.image | default: collection.products.first.featured_image -%}
 
+
+
+
 <a href="{{ block.settings.button_link | default: collection.url }}" {{ block.shopify_attributes }} class="CollectionItem {% if section.settings.expand_collection %}CollectionItem--expand{% endif %} {% if template == 'index' %}Carousel__Cell {% if forloop.first %}is-selected{% endif %}{% endif %}" data-slide-index="{{ forloop.index0 }}">
   {%- capture mobile_size -%}750x{% if collection_image.height >= 960 %}960{% else %}{{ collection_image.height }}{% endif %}{%- endcapture -%}
   {%- assign image_crop = block.settings.image_alignment | split: ' ' | last -%}
+  <h2 class="list_title">{{ collection.title }}</h2>
+  {%- if block.settings.subheading != blank -%}
+    <h3 class="list_subtitle">{{ block.settings.subheading }}</h3>
+  {%- endif -%}
 
   <div class="CollectionItem__Wrapper CollectionItem__Wrapper--{{ section.settings.image_size }}" {% if collection_image %}style="background-image: url({{ collection_image | img_url: '1x1' }})"{% endif %}>
     <div class="CollectionItem__ImageWrapper">
@@ -26,22 +33,6 @@
       {%- endif -%}
     </div>
 
-    <div class="CollectionItem__Content CollectionItem__Content--{{ block.settings.content_position | default: 'bottomLeft' }}">
-      <header class="SectionHeader">
-        {%- if block.settings.subheading != blank -%}
-          <h3 class="SectionHeader__SubHeading Heading u-h6">{{ block.settings.subheading | escape }}</h3>
-        {%- endif -%}
 
-        <h2 class="SectionHeader__Heading SectionHeader__Heading--emphasize Heading u-h1">{{ block.settings.title | default: collection.title | escape }}</h2>
-
-        <div class="SectionHeader__ButtonWrapper">
-          {%- if block.settings.button_text != blank -%}
-            <span class="CollectionItem__Link Button">{{ block.settings.button_text | escape }}</span>
-          {%- else -%}
-            <span class="CollectionItem__Link Button">{{ 'collection.general.view_products' | t }}</span>
-          {%- endif -%}
-        </div>
-      </header>
-    </div>
   </div>
 </a>

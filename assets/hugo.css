@@ -1,12 +1,13 @@
 @font-face {
-  font-family: 'sharp_grotesk';
-  src: url("sharpgrotesk-semibold25-webfont.woff2") format("woff2"), url("sharpgrotesk-semibold25-webfont.woff") format("woff");
+  font-family: 'SharpGrotesk';
+  src: url("SharpGrotesk.woff") format("woff"), url("SharpGrotesk.woff2") format("woff2"), url("SharpGrotesk.eot"), url("SharpGrotesk.eot?#iefix") format("embedded-opentype"), url("SharpGrotesk.otf") format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-  font-family: 'Futura PT Book';
+  font-family: 'FuturaPTBook';
   src: url("FuturaPT-Book.woff2") format("woff2"), url("FuturaPT-Book.woff") format("woff");
   font-weight: normal;
   font-style: normal;
@@ -22,7 +23,7 @@
 }
 
 @font-face {
-  font-family: 'Futura PT';
+  font-family: 'FuturaPT';
   src: url("FuturaPT-Light.woff2") format("woff2"), url("FuturaPT-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
@@ -30,7 +31,7 @@
 }
 
 @font-face {
-  font-family: 'Minion Pro';
+  font-family: 'MinionPro';
   src: url("MinionPro-Regular.woff2") format("woff2"), url("MinionPro-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
@@ -53,8 +54,23 @@ html {
   }
 }
 
+.Header__Logo .Heading {
+  font-family: 'SharpGrotesk';
+  text-transform: lowercase;
+  font-size: 3.8rem !important;
+}
+
 .show_me {
   display: block !important;
+}
+
+.shopify-section--bordered {
+  border: none !important;
+}
+
+.SectionHeader__Heading {
+  text-align: left;
+  margin-left: 4.2rem;
 }
 
 .MegaMenu__Inner {
@@ -75,6 +91,36 @@ html {
 .supports-sticky .Search[aria-hidden=true] + .Header--transparent .Header__LogoLink > .Heading,
 .supports-sticky .Search[aria-hidden=true] + .Header--transparent .Text--subdued {
   color: currentColor;
+}
+
+.Header__Wrapper .Heading.Link, .Header__Wrapper .Link--secondary {
+  font-size: 1.8rem;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  color: black;
+}
+
+.Header__Wrapper .Heading {
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  color: black;
+}
+
+.Header__Wrapper .MegaMenu__Title {
+  font-weight: bold;
+  color: black;
+}
+
+.Header__Wrapper .Header__CartCount {
+  color: #FFF400;
+  background: black;
+  padding: 0px 5px 0px 6px;
+  border-radius: 100%;
+}
+
+.Header--transparent .Header__CartCount {
+  color: black !important;
+  background: #FFF400 !important;
 }
 
 @media screen and (min-width: 1008px) {
@@ -146,4 +192,63 @@ html {
 .ShopTheLook__Dot {
   width: 10px;
   height: 10px;
+}
+
+.list_title {
+  text-align: center;
+  width: 100%;
+  font-size: 2.4rem;
+}
+
+.list_subtitle {
+  text-align: center;
+  width: 100%;
+  font-size: 1.8rem;
+}
+
+#shopify-section-16164220335f9ae374 .SectionHeader__Heading {
+  margin-left: 0;
+  text-align: center;
+}
+
+.shipping {
+  width: 100%;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  text-align: center;
+  padding: 6px 0px;
+}
+
+#section-footer .Container {
+  padding: 0 !important;
+}
+
+#section-footer #footer_title {
+  font-family: "SharpGrotesk";
+  color: black;
+  white-space: nowrap;
+  font-size: 7vw;
+  text-align: center;
+}
+
+#section-footer .Footer__Inner {
+  padding: 0 8rem;
+}
+
+#section-footer .Footer__Copyright {
+  margin-left: 3rem;
+}
+
+#section-footer .Footer__Title, #section-footer .Link {
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+
+#section-footer .Form__Input {
+  border: transparent !important;
+  border-bottom: solid 1px black !important;
+}
+
+#section-footer .Form__Submit {
+  display: none;
 }
