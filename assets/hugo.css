@@ -1,0 +1,149 @@
+@font-face {
+  font-family: 'sharp_grotesk';
+  src: url("sharpgrotesk-semibold25-webfont.woff2") format("woff2"), url("sharpgrotesk-semibold25-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Futura PT Book';
+  src: url("FuturaPT-Book.woff2") format("woff2"), url("FuturaPT-Book.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FuturaPTDemi';
+  src: url("FuturaPTDemi.woff2") format("woff2"), url("FuturaPTDemi.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Futura PT';
+  src: url("FuturaPT-Light.woff2") format("woff2"), url("FuturaPT-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Minion Pro';
+  src: url("MinionPro-Regular.woff2") format("woff2"), url("MinionPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@media (min-width: 991px) and (max-width: 1200px) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media (min-width: 750px) and (max-width: 990px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+.show_me {
+  display: block !important;
+}
+
+.MegaMenu__Inner {
+  grid-template-columns: repeat(auto-fit, minmax(120px, 6fr)) !important;
+}
+
+.supports-sticky .Search[aria-hidden=true] + .Header--black .Header__Icon,
+.supports-sticky .Search[aria-hidden=true] + .Header--black .HorizontalList__Item > .SelectButton,
+.supports-sticky .Search[aria-hidden=true] + .Header--black .HorizontalList__Item > .Heading,
+.supports-sticky .Search[aria-hidden=true] + .Header--black .Header__LogoLink > .Heading,
+.supports-sticky .Search[aria-hidden=true] + .Header--black .Text--subdued {
+  color: black !important;
+}
+
+.supports-sticky .Search[aria-hidden=true] + .Header--transparent .Header__Icon,
+.supports-sticky .Search[aria-hidden=true] + .Header--transparent .HorizontalList__Item > .SelectButton,
+.supports-sticky .Search[aria-hidden=true] + .Header--transparent .HorizontalList__Item > .Heading,
+.supports-sticky .Search[aria-hidden=true] + .Header--transparent .Header__LogoLink > .Heading,
+.supports-sticky .Search[aria-hidden=true] + .Header--transparent .Text--subdued {
+  color: currentColor;
+}
+
+@media screen and (min-width: 1008px) {
+  .\31\/4--lap-and-up, .\33\/12--lap-and-up {
+    width: 20% !important;
+  }
+}
+
+#shop_look_wrapper {
+  display: block;
+}
+
+.ShopTheLook {
+  width: 80%;
+  padding: 0;
+  max-width: 120vw;
+}
+
+.ShopTheLook .flickity-viewport {
+  height: 80rem !important;
+}
+
+.ShopTheLook .ProductItem__Info {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 13px;
+  border-radius: 200px;
+  color: #ddd304;
+}
+
+.ShopTheLook .ProductItem__Info .ProductItem__Title, .ShopTheLook .ProductItem__Info .ProductItem__Price {
+  color: #ddd304 !important;
+}
+
+.ShopTheLook__ProductList .AspectRatio {
+  display: none !important;
+}
+
+.ShopTheLook__ImageWrapper {
+  width: 100% !important;
+}
+
+.ShopTheLook__ProductItem img {
+  display: none;
+}
+
+.ShopTheLook__ViewButton, .flickity-page-dots {
+  display: none !important;
+}
+
+.ShopTheLook__ProductList {
+  position: absolute;
+  right: 0;
+  top: 3%;
+}
+
+.ShopTheLook__Dot::after {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  left: -5px;
+  top: -5px;
+  border-radius: 100%;
+  background: rgba(255, 255, 255, 0.4);
+  -webkit-animation: 1.4s shopTheLookDotKeyframe ease-in-out infinite;
+  animation: 1.4s shopTheLookDotKeyframe ease-in-out infinite;
+}
+
+.ShopTheLook__Dot {
+  width: 10px;
+  height: 10px;
+}
