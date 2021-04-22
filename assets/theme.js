@@ -5518,6 +5518,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
         fastdom.mutate(function () {
           target.classList.add('is-expanded');
+          alert('i am here')
+
           __WEBPACK_IMPORTED_MODULE_0__helper_Dom__["default"].nodeListToArray(target.children, '.Header__MainNav [aria-hidden="true"]').forEach(function (item) {
             item.setAttribute('aria-hidden', 'false');
           });
@@ -5656,8 +5658,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         fastdom.mutate(function () {
           if (_this54.lastScrollPosition <= scrollThreshold) {
             _this54.element.classList.add('Header--transparent');
+            _this54.element.classList.add('Header--up');
+            _this54.element.classList.remove('Header--down');
+
           } else {
             _this54.element.classList.remove('Header--transparent');
+            _this54.element.classList.remove('Header--up');
+            _this54.element.classList.add('Header--down');
           }
         });
       }

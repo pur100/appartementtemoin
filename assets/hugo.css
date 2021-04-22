@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'SharpGrotesk';
   src: url("SharpGrotesk.woff") format("woff"), url("SharpGrotesk.woff2") format("woff2"), url("SharpGrotesk.eot"), url("SharpGrotesk.eot?#iefix") format("embedded-opentype"), url("SharpGrotesk.otf") format("truetype");
@@ -54,6 +55,12 @@ html {
   }
 }
 
+@media (max-width: 749px) {
+  html {
+    font-size: 35%;
+  }
+}
+
 .Header__Logo .Heading {
   font-family: 'SharpGrotesk';
   text-transform: lowercase;
@@ -73,60 +80,135 @@ html {
   margin-left: 4.2rem;
 }
 
+.Image--contrast::after {
+  content: none;
+  background-image: none;
+}
+
+.Header {
+  box-shadow: none;
+}
+
+.Search {
+  top: 0;
+  z-index: 999 !important;
+  width: 30%;
+  right: 0;
+}
+
+@media screen and (min-width: 641px) {
+  .\31\/4--tablet-and-up, .\33\/12--tablet-and-up {
+    width: 100%;
+  }
+}
+
+.Header__SecondaryNav a {
+  text-transform: lowercase !important;
+}
+
 .MegaMenu__Inner {
   grid-template-columns: repeat(auto-fit, minmax(120px, 6fr)) !important;
 }
 
-.supports-sticky .Search[aria-hidden=true] + .Header--black .Header__Icon,
-.supports-sticky .Search[aria-hidden=true] + .Header--black .HorizontalList__Item > .SelectButton,
-.supports-sticky .Search[aria-hidden=true] + .Header--black .HorizontalList__Item > .Heading,
-.supports-sticky .Search[aria-hidden=true] + .Header--black .Header__LogoLink > .Heading,
-.supports-sticky .Search[aria-hidden=true] + .Header--black .Text--subdued {
-  color: black !important;
-}
-
-.supports-sticky .Search[aria-hidden=true] + .Header--transparent .Header__Icon,
-.supports-sticky .Search[aria-hidden=true] + .Header--transparent .HorizontalList__Item > .SelectButton,
-.supports-sticky .Search[aria-hidden=true] + .Header--transparent .HorizontalList__Item > .Heading,
-.supports-sticky .Search[aria-hidden=true] + .Header--transparent .Header__LogoLink > .Heading,
-.supports-sticky .Search[aria-hidden=true] + .Header--transparent .Text--subdued {
-  color: currentColor;
+.yellow {
+  background-color: #ffe000 !important;
 }
 
 .Header__Wrapper .Heading.Link, .Header__Wrapper .Link--secondary {
   font-size: 1.8rem;
   text-transform: lowercase;
   letter-spacing: 1px;
-  color: black;
 }
 
 .Header__Wrapper .Heading {
   font-size: 1.8rem;
   letter-spacing: 1px;
-  color: black;
 }
 
 .Header__Wrapper .MegaMenu__Title {
   font-weight: bold;
-  color: black;
 }
 
 .Header__Wrapper .Header__CartCount {
-  color: #FFF400;
-  background: black;
-  padding: 0px 5px 0px 6px;
+  padding: 0px 4px 0px 5px;
+  font-size: 14px !important;
   border-radius: 100%;
+}
+
+.Header--index * {
+  color: #ffe000 !important;
+}
+
+.yellow .Header__CartCount  {
+  color: #ffe000  !important;
+  background: black !important;
+}
+
+.Header--down *, .yellow * {
+  color: black !important;
+}
+
+.Header--black.Header--down {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.Header--black * {
+  color: black !important;
+}
+
+.Header--down .Header__CartCount {
+  color: black !important;
+  background: #ffe000 !important;
+}
+
+.Header--black .Header__CartCount {
+  color: black !important;
+  background: #ffe000 !important;
+}
+
+.yellow .Header__CartCount {
+  color: #ffe000 !important;
+  background: black !important;
 }
 
 .Header--transparent .Header__CartCount {
   color: black !important;
-  background: #FFF400 !important;
+  background: #ffe000 !important;
+}
+
+@media screen and (min-width: 1140px) {
+  .CollectionItem__Wrapper--large {
+    height: 900px !important;
+  }
 }
 
 @media screen and (min-width: 1008px) {
   .\31\/4--lap-and-up, .\33\/12--lap-and-up {
     width: 20% !important;
   }
+}
+
+.CollectionToolbar {
+  box-shadow: none;
+  position: absolute;
+  top: 20rem;
+}
+
+.CollectionToolbar__Item {
+  border-left: none;
+}
+
+.CollectionInner {
+  margin-top: 100px;
+}
+
+.fil_dariane {
+  text-transform: uppercase;
+  font-size: 14px;
+  text-align: left !important;
+  top: 3.5rem;
+  z-index: 99;
+  position: absolute;
 }
 
 #shop_look_wrapper {
@@ -139,19 +221,13 @@ html {
   max-width: 120vw;
 }
 
-.ShopTheLook .flickity-viewport {
-  height: 80rem !important;
-}
-
-.ShopTheLook .ProductItem__Info {
-  background: rgba(0, 0, 0, 0.6);
-  padding: 13px;
-  border-radius: 200px;
-  color: #ddd304;
-}
-
-.ShopTheLook .ProductItem__Info .ProductItem__Title, .ShopTheLook .ProductItem__Info .ProductItem__Price {
-  color: #ddd304 !important;
+.ShopTheLook__ProductItem .ProductItem__ImageWrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9;
 }
 
 .ShopTheLook__ProductList .AspectRatio {
@@ -184,7 +260,7 @@ html {
   left: -5px;
   top: -5px;
   border-radius: 100%;
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.6);
   -webkit-animation: 1.4s shopTheLookDotKeyframe ease-in-out infinite;
   animation: 1.4s shopTheLookDotKeyframe ease-in-out infinite;
 }
@@ -251,4 +327,13 @@ html {
 
 #section-footer .Form__Submit {
   display: none;
+}
+
+@media screen and (max-width: 798px) {
+  .Header__LogoLink {
+    margin-left: 12%;
+  }
+  .Header--transparent .Header__CartCount {
+    margin-left: 1rem;
+  }
 }

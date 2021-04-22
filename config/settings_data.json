@@ -2,8 +2,8 @@
   "current": {
     "heading_color": "#1c1b1b",
     "text_color": "#1c1b1b",
-    "text_light_color": "#6a6a6a",
-    "link_color": "#6a6a6a",
+    "text_light_color": "#000000",
+    "link_color": "#000000",
     "background": "#ffffff",
     "light_background": "#ffffff",
     "product_on_sale_color": "#f94c43",
@@ -21,10 +21,10 @@
     "newsletter_popup_text_color": "#ffffff",
     "secondary_elements_background": "#1c1b1b",
     "secondary_elements_text_color": "#ffffff",
-    "heading_font": "montserrat_n5",
+    "heading_font": "futura_n4",
     "heading_size": "small",
     "uppercase_heading": true,
-    "text_font": "nunito_sans_n4",
+    "text_font": "futura_n4",
     "base_text_font_size": 14,
     "show_page_transition": false,
     "search_mode": "product,page",
@@ -102,12 +102,10 @@
       "footer": {
         "type": "footer",
         "blocks": {
-          "footer-0": {
-            "type": "text",
+          "4d3abd5e-7172-4a13-a108-1f5e64bcff0d": {
+            "type": "links",
             "settings": {
-              "title": "About the shop",
-              "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.<\/p>",
-              "show_social_media": true
+              "menu": "mentions-legales"
             }
           },
           "footer-1": {
@@ -116,17 +114,31 @@
               "menu": "footer"
             }
           },
+          "19567e6e-f05f-48bf-907f-409c32698e08": {
+            "type": "links",
+            "settings": {
+              "menu": "entreprise"
+            }
+          },
+          "b32c38cd-6508-4e15-8664-c165a1267215": {
+            "type": "links",
+            "settings": {
+              "menu": "reseaux"
+            }
+          },
           "footer-2": {
             "type": "newsletter",
             "settings": {
               "title": "Newsletter",
-              "content": "<p>Subscribe to receive updates, access to exclusive deals, and more.<\/p>"
+              "content": ""
             }
           }
         },
         "block_order": [
-          "footer-0",
+          "4d3abd5e-7172-4a13-a108-1f5e64bcff0d",
           "footer-1",
+          "19567e6e-f05f-48bf-907f-409c32698e08",
+          "b32c38cd-6508-4e15-8664-c165a1267215",
           "footer-2"
         ],
         "settings": {
@@ -422,24 +434,24 @@
           "1616421999bf4ac604-0": {
             "type": "collection",
             "settings": {
-              "collection": "",
+              "collection": "archives",
               "image_alignment": "center center",
               "content_position": "bottomLeft",
-              "subheading": "Sub-heading",
-              "title": "Collection name",
-              "button_text": "View products",
+              "subheading": "",
+              "title": "",
+              "button_text": "",
               "apply_overlay": true
             }
           },
           "1616421999bf4ac604-1": {
             "type": "collection",
             "settings": {
-              "collection": "",
+              "collection": "art",
               "image_alignment": "center center",
               "content_position": "bottomLeft",
-              "subheading": "Sub-heading",
-              "title": "Collection name",
-              "button_text": "View products",
+              "subheading": "",
+              "title": "",
+              "button_text": "",
               "apply_overlay": true
             }
           }
@@ -489,7 +501,7 @@
           "1616588492b744b90b-0": {
             "type": "collection",
             "settings": {
-              "collection": "",
+              "collection": "shop-cuisine",
               "image_alignment": "center center",
               "content_position": "bottomLeft",
               "subheading": "Sub-heading",
@@ -501,7 +513,7 @@
           "1616588492b744b90b-1": {
             "type": "collection",
             "settings": {
-              "collection": "",
+              "collection": "shop-cuisine",
               "image_alignment": "center center",
               "content_position": "bottomLeft",
               "subheading": "Sub-heading",
@@ -530,12 +542,12 @@
           "325886b3-e3f7-4df5-993c-5ab4f98dc84e": {
             "type": "look",
             "settings": {
-              "image": "shopify:\/\/shop_images\/coverpage.jpg",
+              "image": "shopify:\/\/shop_images\/SudokuAndTheMoons_entree.jpg",
               "dot_style": "light",
-              "product_1": "hugo-le-chien-pastel",
+              "product_1": "",
               "product_1_horizontal_position": 15,
               "product_1_vertical_position": 15,
-              "product_2": "monique-1998",
+              "product_2": "",
               "product_2_horizontal_position": 50,
               "product_2_vertical_position": 50,
               "product_3": "",
@@ -546,23 +558,57 @@
           "ca719d7a-4835-4665-ac59-ce8e27bf9d7c": {
             "type": "look",
             "settings": {
-              "image": "shopify:\/\/shop_images\/AT-vintage-1.jpg",
+              "image": "shopify:\/\/shop_images\/Sudoku-738.jpg",
               "dot_style": "light",
-              "product_1": "monique-1998",
-              "product_1_horizontal_position": 15,
-              "product_1_vertical_position": 15,
+              "product_1": "antique-amphora-shaped-lamp",
+              "product_1_horizontal_position": 39,
+              "product_1_vertical_position": 49,
               "product_2": "hand-painted-algerian-vase-from-the-70s-vase-algrien-des-annes-70-peint-la-main",
-              "product_2_horizontal_position": 78,
-              "product_2_vertical_position": 25,
-              "product_3": "algerian-vase-1970s",
+              "product_2_horizontal_position": 64,
+              "product_2_vertical_position": 48,
+              "product_3": "",
               "product_3_horizontal_position": 37,
               "product_3_vertical_position": 39
+            }
+          },
+          "1fdf2f83-9ac4-404c-b068-44ea9968f69b": {
+            "type": "look",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Sudoku-659.jpg",
+              "dot_style": "light",
+              "product_1": "eyeball-desk-lamp",
+              "product_1_horizontal_position": 56,
+              "product_1_vertical_position": 24,
+              "product_2": "bamboo-coffee-table",
+              "product_2_horizontal_position": 50,
+              "product_2_vertical_position": 54,
+              "product_3": "black-candlesticks",
+              "product_3_horizontal_position": 31,
+              "product_3_vertical_position": 45
+            }
+          },
+          "0e70021b-30c1-4491-a144-ee3cd323748c": {
+            "type": "look",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Sudoku-784.jpg",
+              "dot_style": "light",
+              "product_1": "antique-norman-ceramic-cups",
+              "product_1_horizontal_position": 37,
+              "product_1_vertical_position": 54,
+              "product_2": "",
+              "product_2_horizontal_position": 50,
+              "product_2_vertical_position": 50,
+              "product_3": "",
+              "product_3_horizontal_position": 85,
+              "product_3_vertical_position": 85
             }
           }
         },
         "block_order": [
           "325886b3-e3f7-4df5-993c-5ab4f98dc84e",
-          "ca719d7a-4835-4665-ac59-ce8e27bf9d7c"
+          "ca719d7a-4835-4665-ac59-ce8e27bf9d7c",
+          "1fdf2f83-9ac4-404c-b068-44ea9968f69b",
+          "0e70021b-30c1-4491-a144-ee3cd323748c"
         ],
         "settings": {
           "subheading": "Shop",
