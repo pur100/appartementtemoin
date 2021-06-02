@@ -292,10 +292,17 @@
                 {%- endcomment -%}
 
                 {{ product.description | replace: 'data-section-type', 'data-section-type-placeholder' }}
+                {% for tag in product.tags %}
+                  {% if tag contains "__devis__" %}
+                        <span><a style="font-size: 1.6rem" href="/pages/contact">Demander un devis</a></span>
+                  {% endif %}
+                {% endfor %}
               </div>
 
-              <div class="shipping">
+              <div class="shipping" style="margin-top: 4rem">
                 <span>paiement et livraisons sécurisés</span>
+                <br>
+                <span>tous nos objets sont nettoyés et restaurés avec soin</span>
               </div>
 
               {%- if section.settings.show_share_buttons -%}

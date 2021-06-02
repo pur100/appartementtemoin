@@ -1,0 +1,134 @@
+
+<div class="title_block">
+  <h2 style="">{{section.settings.title}}</h2>
+  {{section.settings.subheading}}
+</div>
+
+<div class="chapitres_container">
+  {% for block in section.blocks %}
+    <div class="chapitre" style="margin-top: {{block.settings.margin_top}}rem; margin-bottom: {{block.settings.margin_bottom}}rem;">
+      <a href="{{ block.settings.link_url }}">
+        {%- assign image_url = block.settings.image | img_url: '1x1', format: 'pjpg' | replace: '_1x1.', '_{width}x.' -%}
+                  {%- capture supported_sizes -%}{%- render 'image-size', sizes: '200,400,600,700,800,1000,1200', image: block.settings.image -%}{%- endcapture -%}
+
+          <img class=" Image--lazyLoad Image--fadeIn"
+               data-src="{{ image_url }}"
+               data-widths="[{{ supported_sizes }}]"
+               data-sizes="auto"
+               alt="{{ block.settings.image.alt | escape }}">
+      <h4>{{ block.settings.content }}</h4>
+      </a>
+    </div>
+  {% endfor %}
+</div>
+
+
+
+{% schema %}
+{
+  "name": "Liste de chapitres",
+  "class": "shopify-section--bordered",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "subheading",
+      "label": "Sub-heading",
+      "default": "<p>Sub-heading</p>"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Title"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image",
+      "info": "1200 x 1200px .png recommended"
+    },
+    {
+      "type": "select",
+      "id": "image_position",
+      "label": "Image position",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "right"
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Text",
+      "default": "<p>Add your own custom content to give more information about your store, availability details...</p>"
+    },
+    {
+      "type": "text",
+      "id": "link_text",
+      "label": "Link text"
+    },
+    {
+      "type": "url",
+      "id": "link_url",
+      "label": "Link URL"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "chapitre",
+      "name": "Chapitre",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image",
+          "info": "975 x 1185px .jpg recommended (vertical image) or 1200 x 1200px .jpg recommended (square image)."
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Text",
+          "default": "<p>Add your own custom content to give more information about your store, availability details...</p>"
+        },
+        {
+          "type": "url",
+          "id": "link_url",
+          "label": "Link URL"
+        },
+        {
+          "type": "range",
+          "id": "margin_top",
+          "label": "Marge haut",
+          "step": 1,
+          "min": -10,
+          "max": 30,
+          "default": 0
+        },
+        {
+          "type": "range",
+          "id": "margin_bottom",
+          "label": "Marge bas",
+          "step": 1,
+          "min": -10,
+          "max": 30,
+          "default": 0
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "category": "Text",
+      "name": "Rich text with image",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

@@ -9,7 +9,7 @@
 {%- endif -%}
 
 <footer id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="footer" class="Footer {% if section.blocks.size <= 2 %}Footer--center{% endif %} {% if add_top_margin %}Footer--withMargin{% endif %}" role="contentinfo">
-  <div class="Container">
+  <div class="Container" style="position: relative;">
     {%- if section.blocks.size > 0 -%}
       <div class="Footer__Inner">
         {%- for block in section.blocks -%}

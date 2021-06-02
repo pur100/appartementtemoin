@@ -307,7 +307,7 @@
       "shipping_policy_html": "<a href=\"{{ link }}\" class=\"link link--accented\">Frais de port<\/a> calculés au paiement."
     },
     "labels": {
-      "sold_out": "Rupture",
+      "sold_out": "Vendu",
       "on_sale": "En solde"
     },
     "slideshow": {
@@ -334,7 +334,7 @@
         "other": "Seulement {{count}} exemplaires en stock !"
       },
       "add_to_cart": "Ajouter au panier",
-      "sold_out": "Rupture",
+      "sold_out": "Vendu",
       "pre_order": "Pré-commander",
       "unavailable": "Indisponible",
       "view_info": "En savoir plus",
@@ -415,5 +415,31 @@
     "month_day_year": "%d %B %Y",
     "month_day_year_short": "%d\/%B\/%Y",
     "month_day_year_time": "%d %B %Y à %I:%M"
+  },
+  "shopify": {
+    "collections": {
+      "sorting": {
+        "date_ascending": "Date : produits plus récents",
+        "date_descending": "Date : produits plus anciens",
+        "az": "Alphabétique : de A à Z",
+        "za": "Alphabétique : de Z à A"
+      }
+    },
+    "checkout": {
+      "shipping_errors": {
+        "shipping_method_not_available": "Votre panier a été mis à jour, et les articles que vous avez ajoutés ne peuvent pas être expédiés à votre adresse. Retirez les articles pour finaliser votre commande ou contactez-nous à contact@appartementtemoin.com pour une solution personnalisée d'expédition. ",
+        "shipping_method_not_available_generic": {
+          "one": "ll n'est pas possible d'expédier cette commande à votre emplacement. Contactez la boutique à contact@appartementtemoin.com pour en savoir plus.",
+          "other": "Certains articles de votre panier ne peuvent pas être expédiés à votre emplacement. Contactez la boutique à contact@appartementtemoin.com pour en savoir plus."
+        },
+        "shipping_method_not_available_updated": {
+          "one": "L'article que vous avez ajouté ne peut pas être expédié à votre emplacement. Veuillez le supprimer pour pouvoir payer, ou contactez la boutique à contact@appartementtemoin.com",
+          "other": "Il n'est pas possible d'expédier à votre emplacement au moins un des articles que vous avez ajoutés. Veuillez le(s) supprimer pour pouvoir payer, ou contactez la boutique à contact@appartementtemoin.com"
+        }
+      }
+    },
+    "links": {
+      "powered_by_shopify": " "
+    }
   }
 }

@@ -9,25 +9,26 @@
     "product_on_sale_color": "#f94c43",
     "button_background": "#1c1b1b",
     "button_text_color": "#ffffff",
-    "header_background": "#fff400",
-    "header_heading_color": "#1c1b1b",
-    "header_light_color": "#6a6a6a",
+    "header_background": "rgba(0,0,0,0)",
+    "header_heading_color": "rgba(0,0,0,0)",
+    "header_light_color": "rgba(0,0,0,0)",
     "footer_background": "#ffffff",
     "footer_heading_color": "#1c1b1b",
-    "footer_text_color": "#6a6a6a",
-    "navigation_background": "#1c1b1b",
-    "navigation_text_color": "#ffffff",
+    "footer_text_color": "#0a0909",
+    "navigation_background": "#ffffff",
+    "navigation_text_color": "#000000",
     "newsletter_popup_background": "#1c1b1b",
     "newsletter_popup_text_color": "#ffffff",
     "secondary_elements_background": "#1c1b1b",
     "secondary_elements_text_color": "#ffffff",
-    "heading_font": "futura_n4",
+    "heading_font": "bio_rhyme_n4",
     "heading_size": "small",
     "uppercase_heading": true,
     "text_font": "futura_n4",
     "base_text_font_size": 14,
     "show_page_transition": false,
-    "search_mode": "product,page",
+    "show_image_zooming": false,
+    "search_mode": "product",
     "product_show_price_on_hover": false,
     "product_show_secondary_image": false,
     "product_info_alignment": "center",
@@ -38,6 +39,7 @@
     "cart_enable_notes": true,
     "cart_show_free_shipping_threshold": false,
     "cart_free_shipping_threshold": "50",
+    "favicon": "shopify:\/\/shop_images\/faviconOK.png",
     "checkout_logo_position": "center",
     "checkout_logo_size": "small",
     "checkout_body_background_color": "#ffffff",
@@ -49,8 +51,8 @@
       "sidebar-menu": {
         "type": "sidebar-menu",
         "settings": {
-          "primary_menu": "main-menu",
-          "secondary_menu": "",
+          "primary_menu": "smaller-menu",
+          "secondary_menu": "mobile-2",
           "show_social_media": true
         }
       },
@@ -76,7 +78,7 @@
               "push_1_url": "shopify:\/\/collections\/a-room-of-ones-own",
               "push_2_heading": "Example heading",
               "push_2_subheading": "Example sub-heading",
-              "push_2_url": "shopify:\/\/products\/algues-poissons-vase"
+              "push_2_url": "shopify:\/\/products\/vase-vintage-algues-et-poissons"
             }
           }
         },
@@ -86,7 +88,7 @@
         "settings": {
           "use_sticky_header": true,
           "logo_max_width": 140,
-          "mobile_logo_max_width": 90,
+          "mobile_logo_max_width": 50,
           "show_currency_selector": true,
           "show_locale_selector": true,
           "other_menu": "",
@@ -96,7 +98,7 @@
           "enable_transparent_header": true,
           "enable_transparent_header_collection": true,
           "show_transparent_header_border": false,
-          "transparent_text_color": "#fff400"
+          "transparent_text_color": "#ffe000"
         }
       },
       "footer": {
@@ -153,7 +155,7 @@
           "dc393d37-b57f-4216-bded-d02ccb4bd9f6": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/coverpage.jpg",
+              "image": "shopify:\/\/shop_images\/appartement_temoin_header.jpg",
               "apply_overlay": true,
               "content_position": "bottomLeft",
               "subheading": "",
@@ -167,7 +169,7 @@
           "dc393d37-b57f-4216-bded-d02ccb4bd9f6"
         ],
         "settings": {
-          "show_fullscreen": true,
+          "show_fullscreen": false,
           "show_arrow": false,
           "autoplay": true,
           "cycle_speed": 5,
@@ -336,12 +338,12 @@
           "apply_overlay": true,
           "show_color_swatch": false,
           "show_vendor": false,
-          "collection_image_size": "normal",
+          "collection_image_size": "large",
           "show_sort_by": true,
           "show_layout_switch": false,
           "toolbar_position": "top",
           "filter_position": "drawer",
-          "filter_mode": "tag",
+          "filter_mode": "group",
           "show_filter_color_swatch": true,
           "filter_menu": "",
           "grid_items_per_page": 48,
@@ -353,7 +355,7 @@
         "type": "recently-viewed-products",
         "settings": {
           "show_section": true,
-          "title": "Recently viewed",
+          "title": "Vu récemment",
           "show_product_info": true,
           "show_vendor": false,
           "show_color_swatch": false
@@ -384,7 +386,7 @@
           "show_inventory_quantity": false,
           "inventory_quantity_threshold": 3,
           "show_price_in_button": false,
-          "show_payment_button": true,
+          "show_payment_button": false,
           "show_pickup_availability": false,
           "image_size": "large",
           "stack_images": true,
@@ -425,7 +427,7 @@
         "settings": {
           "subheading": "",
           "title": "",
-          "html": "<p>Appartement Témoin, c’est à la fois chiner et fabriquer sa propre gamme<br>de mobilier et d’accessoires à partir de matériaux recyclés. <\/p>"
+          "html": "<p style=\"font-size: 2.4rem\">Appartement Témoin vous propose du mobilier et des objets uniques et intemporels.<\/p>"
         }
       },
       "1616421999bf4ac604": {
@@ -434,7 +436,8 @@
           "1616421999bf4ac604-0": {
             "type": "collection",
             "settings": {
-              "collection": "archives",
+              "collection": "decoration-vintage",
+              "image": "shopify:\/\/shop_images\/FOUGERE2.jpg",
               "image_alignment": "center center",
               "content_position": "bottomLeft",
               "subheading": "",
@@ -446,7 +449,8 @@
           "1616421999bf4ac604-1": {
             "type": "collection",
             "settings": {
-              "collection": "art",
+              "collection": "vaisselle-vintage",
+              "image": "shopify:\/\/shop_images\/pichet-vintage-pol-chambost.jpg",
               "image_alignment": "center center",
               "content_position": "bottomLeft",
               "subheading": "",
@@ -475,10 +479,10 @@
           "16164220335f9ae374-0": {
             "type": "collection",
             "settings": {
-              "collection": "archives",
-              "title": "",
-              "grid_items_count": 5,
-              "button_text": ""
+              "collection": "fougeres",
+              "title": "Fougères : les objets et le mobilier",
+              "grid_items_count": 4,
+              "button_text": "Découvrir"
             }
           }
         },
@@ -493,47 +497,6 @@
           "show_color_swatch": false,
           "grid_mobile_items_per_row": "2",
           "grid_desktop_items_per_row": 4
-        }
-      },
-      "1616588492b744b90b": {
-        "type": "collection-list",
-        "blocks": {
-          "1616588492b744b90b-0": {
-            "type": "collection",
-            "settings": {
-              "collection": "shop-cuisine",
-              "image_alignment": "center center",
-              "content_position": "bottomLeft",
-              "subheading": "Sub-heading",
-              "title": "Collection name",
-              "button_text": "View products",
-              "apply_overlay": true
-            }
-          },
-          "1616588492b744b90b-1": {
-            "type": "collection",
-            "settings": {
-              "collection": "shop-cuisine",
-              "image_alignment": "center center",
-              "content_position": "bottomLeft",
-              "subheading": "Sub-heading",
-              "title": "Collection name",
-              "button_text": "View products",
-              "apply_overlay": true
-            }
-          }
-        },
-        "block_order": [
-          "1616588492b744b90b-0",
-          "1616588492b744b90b-1"
-        ],
-        "settings": {
-          "image_size": "large",
-          "add_spacing": true,
-          "expand_collection": true,
-          "stack_on_mobile": true,
-          "text_color": "#ffffff",
-          "button_color": "#363636"
         }
       },
       "shop-the-look1": {
@@ -552,7 +515,13 @@
               "product_2_vertical_position": 50,
               "product_3": "",
               "product_3_horizontal_position": 85,
-              "product_3_vertical_position": 85
+              "product_3_vertical_position": 85,
+              "product_4": "",
+              "product_4_horizontal_position": 85,
+              "product_4_vertical_position": 85,
+              "product_5": "",
+              "product_5_horizontal_position": 85,
+              "product_5_vertical_position": 85
             }
           },
           "ca719d7a-4835-4665-ac59-ce8e27bf9d7c": {
@@ -560,15 +529,21 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/Sudoku-738.jpg",
               "dot_style": "light",
-              "product_1": "antique-amphora-shaped-lamp",
+              "product_1": "lampe-vintage-amphore-onyx-annees-60",
               "product_1_horizontal_position": 39,
               "product_1_vertical_position": 49,
               "product_2": "hand-painted-algerian-vase-from-the-70s-vase-algrien-des-annes-70-peint-la-main",
               "product_2_horizontal_position": 64,
               "product_2_vertical_position": 48,
-              "product_3": "",
+              "product_3": "sp5yx418u4o2rgfabbq1qxx7atk17c",
               "product_3_horizontal_position": 37,
-              "product_3_vertical_position": 39
+              "product_3_vertical_position": 39,
+              "product_4": "monique-1998",
+              "product_4_horizontal_position": 85,
+              "product_4_vertical_position": 85,
+              "product_5": "tapis-vintage-berbere-annees-70",
+              "product_5_horizontal_position": 34,
+              "product_5_vertical_position": 58
             }
           },
           "1fdf2f83-9ac4-404c-b068-44ea9968f69b": {
@@ -576,15 +551,21 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/Sudoku-659.jpg",
               "dot_style": "light",
-              "product_1": "eyeball-desk-lamp",
+              "product_1": "lampe-vintage-en-metal-chrome-eyeball",
               "product_1_horizontal_position": 56,
               "product_1_vertical_position": 24,
-              "product_2": "bamboo-coffee-table",
+              "product_2": "table-basse-vintage-bambou-annees-70",
               "product_2_horizontal_position": 50,
               "product_2_vertical_position": 54,
-              "product_3": "black-candlesticks",
+              "product_3": "bougeoirs-vintage-noir",
               "product_3_horizontal_position": 31,
-              "product_3_vertical_position": 45
+              "product_3_vertical_position": 45,
+              "product_4": "",
+              "product_4_horizontal_position": 85,
+              "product_4_vertical_position": 85,
+              "product_5": "",
+              "product_5_horizontal_position": 85,
+              "product_5_vertical_position": 85
             }
           },
           "0e70021b-30c1-4491-a144-ee3cd323748c": {
@@ -592,7 +573,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/Sudoku-784.jpg",
               "dot_style": "light",
-              "product_1": "antique-norman-ceramic-cups",
+              "product_1": "tasses-a-cafe-vintage-normandie-france",
               "product_1_horizontal_position": 37,
               "product_1_vertical_position": 54,
               "product_2": "",
@@ -600,7 +581,56 @@
               "product_2_vertical_position": 50,
               "product_3": "",
               "product_3_horizontal_position": 85,
-              "product_3_vertical_position": 85
+              "product_3_vertical_position": 85,
+              "product_4": "",
+              "product_4_horizontal_position": 85,
+              "product_4_vertical_position": 85,
+              "product_5": "",
+              "product_5_horizontal_position": 85,
+              "product_5_vertical_position": 85
+            }
+          },
+          "627f3436-f873-41a9-a0df-b22cfb5db378": {
+            "type": "look",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/SudokuAndTheMoons_sortie.jpg",
+              "dot_style": "light",
+              "product_1": "",
+              "product_1_horizontal_position": 15,
+              "product_1_vertical_position": 15,
+              "product_2": "",
+              "product_2_horizontal_position": 50,
+              "product_2_vertical_position": 50,
+              "product_3": "",
+              "product_3_horizontal_position": 85,
+              "product_3_vertical_position": 85,
+              "product_4": "",
+              "product_4_horizontal_position": 85,
+              "product_4_vertical_position": 85,
+              "product_5": "",
+              "product_5_horizontal_position": 85,
+              "product_5_vertical_position": 85
+            }
+          },
+          "5d78dcd5-0e3d-40ce-9ea7-9cbebabd5fdf": {
+            "type": "look",
+            "settings": {
+              "dot_style": "light",
+              "product_1": "",
+              "product_1_horizontal_position": 15,
+              "product_1_vertical_position": 15,
+              "product_2": "",
+              "product_2_horizontal_position": 50,
+              "product_2_vertical_position": 50,
+              "product_3": "",
+              "product_3_horizontal_position": 85,
+              "product_3_vertical_position": 85,
+              "product_4": "",
+              "product_4_horizontal_position": 85,
+              "product_4_vertical_position": 85,
+              "product_5": "",
+              "product_5_horizontal_position": 85,
+              "product_5_vertical_position": 85
             }
           }
         },
@@ -608,12 +638,15 @@
           "325886b3-e3f7-4df5-993c-5ab4f98dc84e",
           "ca719d7a-4835-4665-ac59-ce8e27bf9d7c",
           "1fdf2f83-9ac4-404c-b068-44ea9968f69b",
-          "0e70021b-30c1-4491-a144-ee3cd323748c"
+          "0e70021b-30c1-4491-a144-ee3cd323748c",
+          "627f3436-f873-41a9-a0df-b22cfb5db378",
+          "5d78dcd5-0e3d-40ce-9ea7-9cbebabd5fdf"
         ],
         "settings": {
-          "subheading": "Shop",
-          "title": "Our looks",
-          "show_mobile_product_info": false
+          "subheading": "",
+          "title": "",
+          "show_mobile_product_info": false,
+          "product_color": "#ffffff"
         }
       },
       "shop-the-look2": {
@@ -622,9 +655,90 @@
           "871cdd42-1034-4f0d-9363-e1937da0e64f": {
             "type": "look",
             "settings": {
-              "image": "shopify:\/\/shop_images\/AT-SudokuAndTheMoons_sortie.jpg",
+              "image": "shopify:\/\/shop_images\/IMG_4832.jpg",
               "dot_style": "light",
-              "product_1": "7j72cwszr00yitko376ioc569akh9t",
+              "product_1": "vase-vintage-algues-et-poissons",
+              "product_1_horizontal_position": 26,
+              "product_1_vertical_position": 33,
+              "product_2": "pastel-vintage-hugo-le-chien",
+              "product_2_horizontal_position": 50,
+              "product_2_vertical_position": 50,
+              "product_3": "",
+              "product_3_horizontal_position": 85,
+              "product_3_vertical_position": 85,
+              "product_4": "",
+              "product_4_horizontal_position": 85,
+              "product_4_vertical_position": 85,
+              "product_5": "",
+              "product_5_horizontal_position": 85,
+              "product_5_vertical_position": 85
+            }
+          },
+          "4ba50f3a-7d9e-4fb0-a2b2-591a6ab5fbd5": {
+            "type": "look",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/IMG_4799.jpg",
+              "dot_style": "light",
+              "product_1": "monique-1998",
+              "product_1_horizontal_position": 43,
+              "product_1_vertical_position": 80,
+              "product_2": "",
+              "product_2_horizontal_position": 50,
+              "product_2_vertical_position": 50,
+              "product_3": "",
+              "product_3_horizontal_position": 85,
+              "product_3_vertical_position": 85,
+              "product_4": "",
+              "product_4_horizontal_position": 85,
+              "product_4_vertical_position": 85,
+              "product_5": "",
+              "product_5_horizontal_position": 85,
+              "product_5_vertical_position": 85
+            }
+          }
+        },
+        "block_order": [
+          "871cdd42-1034-4f0d-9363-e1937da0e64f",
+          "4ba50f3a-7d9e-4fb0-a2b2-591a6ab5fbd5"
+        ],
+        "settings": {
+          "subheading": "Shop",
+          "title": "Our looks",
+          "show_mobile_product_info": false,
+          "product_color": "#FFFFFF"
+        }
+      },
+      "text-with-image": {
+        "type": "text-with-image",
+        "settings": {
+          "subheading": "Sub-heading",
+          "title": "Title",
+          "image_position": "right",
+          "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
+          "link_text": ""
+        }
+      },
+      "chapitres_grid": {
+        "type": "chapitres_grid",
+        "settings": {
+          "section_size": "large",
+          "image": "shopify:\/\/shop_images\/IMG_4799.jpg",
+          "text_color": "#ffffff",
+          "overlay_color": "#000000",
+          "overlay_opacity": 30,
+          "subheading": "",
+          "title": "Tell your story",
+          "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+        }
+      },
+      "shop-the-look4": {
+        "type": "shop-the-look4",
+        "blocks": {
+          "efaf36e1-3f4c-468d-ae68-2525ab884a3b": {
+            "type": "look",
+            "settings": {
+              "dot_style": "light",
+              "product_1": "",
               "product_1_horizontal_position": 15,
               "product_1_vertical_position": 15,
               "product_2": "",
@@ -637,12 +751,604 @@
           }
         },
         "block_order": [
-          "871cdd42-1034-4f0d-9363-e1937da0e64f"
+          "efaf36e1-3f4c-468d-ae68-2525ab884a3b"
         ],
         "settings": {
           "subheading": "Shop",
           "title": "Our looks",
           "show_mobile_product_info": false
+        }
+      },
+      "featured-collections-chapitre1": {
+        "type": "featured-collections-chapitre1",
+        "blocks": {
+          "e9d2b183-de1a-4ff1-a773-89b13eb54e43": {
+            "type": "collection",
+            "settings": {
+              "collection": "archives-lighting",
+              "title": "",
+              "grid_items_count": 5,
+              "button_text": "View all products"
+            }
+          }
+        },
+        "block_order": [
+          "e9d2b183-de1a-4ff1-a773-89b13eb54e43"
+        ],
+        "settings": {
+          "title": "",
+          "layout_mode": "carousel",
+          "show_product_info": true,
+          "show_vendor": false,
+          "show_color_swatch": false,
+          "grid_mobile_items_per_row": "2",
+          "grid_desktop_items_per_row": 4
+        }
+      },
+      "161891297359d781b5": {
+        "type": "shop-the-look1",
+        "blocks": {
+          "1618912973f5aa3d4d-0": {
+            "type": "look",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/chapitre-10-fougeres.jpg",
+              "dot_style": "light",
+              "product_1": "chaises-vintage-skai",
+              "product_1_horizontal_position": 68,
+              "product_1_vertical_position": 65,
+              "product_2": "lampe-vintage-opaline-jaune-annees-60",
+              "product_2_horizontal_position": 75,
+              "product_2_vertical_position": 51,
+              "product_3": "corbeille-vintage-osier-tresse",
+              "product_3_horizontal_position": 84,
+              "product_3_vertical_position": 67,
+              "product_4": "pots-a-crayons-vintage-deyhle",
+              "product_4_horizontal_position": 80,
+              "product_4_vertical_position": 50,
+              "product_5": "",
+              "product_5_horizontal_position": 85,
+              "product_5_vertical_position": 85
+            }
+          },
+          "339b2139-d545-4434-a9c7-3f312861f4b0": {
+            "type": "look",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/appartement-temoin-chapitre-fougeres-objets-vintage-vue-2.jpg",
+              "dot_style": "light",
+              "product_1": "lampe-de-bureau-vintage-rouge",
+              "product_1_horizontal_position": 64,
+              "product_1_vertical_position": 60,
+              "product_2": "",
+              "product_2_horizontal_position": 69,
+              "product_2_vertical_position": 36,
+              "product_3": "range-document-raymond-loewy",
+              "product_3_horizontal_position": 72,
+              "product_3_vertical_position": 51,
+              "product_4": "",
+              "product_4_horizontal_position": 81,
+              "product_4_vertical_position": 54,
+              "product_5": "",
+              "product_5_horizontal_position": 76,
+              "product_5_vertical_position": 63
+            }
+          },
+          "65d92cc7-e01a-49bf-b94c-b33eae058c98": {
+            "type": "look",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/appartement-temoin-chapitre-fougeres-objets-vintage-vue-3.jpg",
+              "dot_style": "light",
+              "product_1": "bougeoirs-anciens-roche-granite",
+              "product_1_horizontal_position": 33,
+              "product_1_vertical_position": 55,
+              "product_2": "table-de-jeu-vintage-art-deco-annees-30",
+              "product_2_horizontal_position": 22,
+              "product_2_vertical_position": 77,
+              "product_3": "metallic-candlesticks",
+              "product_3_horizontal_position": 71,
+              "product_3_vertical_position": 52,
+              "product_4": "",
+              "product_4_horizontal_position": 77,
+              "product_4_vertical_position": 58,
+              "product_5": "",
+              "product_5_horizontal_position": 64,
+              "product_5_vertical_position": 83
+            }
+          },
+          "708b33c4-a577-4021-abf8-6e46cd2ed658": {
+            "type": "look",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/appartement-temoin-chapitre-fougeres-objets-vintage-vue-4.jpg",
+              "dot_style": "light",
+              "product_1": "tables-basses-gigognes-vintage-plexiglas-brun-annees-70",
+              "product_1_horizontal_position": 30,
+              "product_1_vertical_position": 63,
+              "product_2": "bougeoirs-vintage-verre-transparent",
+              "product_2_horizontal_position": 65,
+              "product_2_vertical_position": 65,
+              "product_3": "lampe-vintage-cubique-albert-tormos",
+              "product_3_horizontal_position": 34,
+              "product_3_vertical_position": 41,
+              "product_4": "",
+              "product_4_horizontal_position": 85,
+              "product_4_vertical_position": 85,
+              "product_5": "",
+              "product_5_horizontal_position": 85,
+              "product_5_vertical_position": 85
+            }
+          },
+          "3fc8bc27-9a68-4e1c-899e-c143f871ec06": {
+            "type": "look",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/appartement-temoin-chapitre-fougeres-objets-vintage-vue-5.jpg",
+              "dot_style": "light",
+              "product_1": "tapise-vintage-laine-rouge-et-verte",
+              "product_1_horizontal_position": 23,
+              "product_1_vertical_position": 23,
+              "product_2": "service-a-vaisselle-jaune-faiencerie-salins-france",
+              "product_2_horizontal_position": 63,
+              "product_2_vertical_position": 55,
+              "product_3": "grand-tapis-berbere-raye",
+              "product_3_horizontal_position": 28,
+              "product_3_vertical_position": 49,
+              "product_4": "",
+              "product_4_horizontal_position": 85,
+              "product_4_vertical_position": 85,
+              "product_5": "",
+              "product_5_horizontal_position": 85,
+              "product_5_vertical_position": 85
+            }
+          },
+          "fbc32091-e897-4039-8d40-d8add2fda018": {
+            "type": "look",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/appartement-temoin-chapitre-fougeres-objets-vintage-vue-6.jpg",
+              "dot_style": "light",
+              "product_1": "lampe-de-bureau-vintage-gammalux-annees-70",
+              "product_1_horizontal_position": 30,
+              "product_1_vertical_position": 61,
+              "product_2": "",
+              "product_2_horizontal_position": 49,
+              "product_2_vertical_position": 54,
+              "product_3": "lampe-vintage-en-metal-chrome-eyeball",
+              "product_3_horizontal_position": 72,
+              "product_3_vertical_position": 53,
+              "product_4": "table-vintage-verre-treteaux-triangulaires",
+              "product_4_horizontal_position": 61,
+              "product_4_vertical_position": 71,
+              "product_5": "",
+              "product_5_horizontal_position": 85,
+              "product_5_vertical_position": 85
+            }
+          },
+          "23367dc0-59eb-4784-a85b-e61a8f091569": {
+            "type": "look",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/appartement-temoin-chapitre-fougeres-objets-vintage-vue-7.jpg",
+              "dot_style": "light",
+              "product_1": "assiettes-vintage-cordage-salins-france-annees-50",
+              "product_1_horizontal_position": 61,
+              "product_1_vertical_position": 50,
+              "product_2": "",
+              "product_2_horizontal_position": 50,
+              "product_2_vertical_position": 50,
+              "product_3": "",
+              "product_3_horizontal_position": 85,
+              "product_3_vertical_position": 85,
+              "product_4": "",
+              "product_4_horizontal_position": 85,
+              "product_4_vertical_position": 85,
+              "product_5": "",
+              "product_5_horizontal_position": 85,
+              "product_5_vertical_position": 85
+            }
+          },
+          "b89e609b-73be-4881-b99d-8973e98fe12f": {
+            "type": "look",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/appartement-temoin-chapitre-fougeres-objets-vintage-vue-8.jpg",
+              "dot_style": "light",
+              "product_1": "",
+              "product_1_horizontal_position": 79,
+              "product_1_vertical_position": 77,
+              "product_2": "",
+              "product_2_horizontal_position": 71,
+              "product_2_vertical_position": 18,
+              "product_3": "",
+              "product_3_horizontal_position": 61,
+              "product_3_vertical_position": 59,
+              "product_4": "",
+              "product_4_horizontal_position": 85,
+              "product_4_vertical_position": 85,
+              "product_5": "",
+              "product_5_horizontal_position": 85,
+              "product_5_vertical_position": 85
+            }
+          },
+          "6e28ad80-4e2f-4fd1-982c-677c53070621": {
+            "type": "look",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/appartement-temoin-chapitre-fougeres-objets-vintage-vue-9.jpg",
+              "dot_style": "light",
+              "product_1": "suspension-vintage-verre-de-murano-coloree",
+              "product_1_horizontal_position": 34,
+              "product_1_vertical_position": 36,
+              "product_2": "vase-vintage-verre-trouble-inspiration-lanterne-chinoise",
+              "product_2_horizontal_position": 28,
+              "product_2_vertical_position": 53,
+              "product_3": "petite-lampe-space-age-vintage-socle-cubique",
+              "product_3_horizontal_position": 68,
+              "product_3_vertical_position": 58,
+              "product_4": "lampe-space-age-globe",
+              "product_4_horizontal_position": 74,
+              "product_4_vertical_position": 54,
+              "product_5": "lampe-vintage-space-age-socle-sculpte",
+              "product_5_horizontal_position": 66,
+              "product_5_vertical_position": 47
+            }
+          },
+          "80aa499b-19e9-4a60-9ec7-42848f73341c": {
+            "type": "look",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/appartement-temoin-chapitre-fougeres-objets-vintage-vue-10.jpg",
+              "dot_style": "light",
+              "product_1": "lampe-medicis-vintage",
+              "product_1_horizontal_position": 73,
+              "product_1_vertical_position": 39,
+              "product_2": "banquette-vintage-vert-emeraude-annees-50",
+              "product_2_horizontal_position": 64,
+              "product_2_vertical_position": 24,
+              "product_3": "table-basse-vintage-moderniste-annees-60",
+              "product_3_horizontal_position": 67,
+              "product_3_vertical_position": 75,
+              "product_4": "",
+              "product_4_horizontal_position": 85,
+              "product_4_vertical_position": 85,
+              "product_5": "",
+              "product_5_horizontal_position": 85,
+              "product_5_vertical_position": 85
+            }
+          },
+          "5b1cc086-56ba-40b5-aedf-713d238403ee": {
+            "type": "look",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/appartement-temoin-chapitre-fougeres-objets-vintage-vue-12.jpg",
+              "dot_style": "light",
+              "product_1": "",
+              "product_1_horizontal_position": 64,
+              "product_1_vertical_position": 33,
+              "product_2": "",
+              "product_2_horizontal_position": 81,
+              "product_2_vertical_position": 50,
+              "product_3": "",
+              "product_3_horizontal_position": 85,
+              "product_3_vertical_position": 85,
+              "product_4": "",
+              "product_4_horizontal_position": 85,
+              "product_4_vertical_position": 85,
+              "product_5": "",
+              "product_5_horizontal_position": 85,
+              "product_5_vertical_position": 85
+            }
+          },
+          "754a7dd7-f27b-4527-abcb-4dd5b2af5d7b": {
+            "type": "look",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/appartement-temoin-chapitre-fougeres-objets-vintage-vue-13.jpg",
+              "dot_style": "light",
+              "product_1": "",
+              "product_1_horizontal_position": 15,
+              "product_1_vertical_position": 15,
+              "product_2": "",
+              "product_2_horizontal_position": 50,
+              "product_2_vertical_position": 50,
+              "product_3": "",
+              "product_3_horizontal_position": 85,
+              "product_3_vertical_position": 85,
+              "product_4": "",
+              "product_4_horizontal_position": 85,
+              "product_4_vertical_position": 85,
+              "product_5": "",
+              "product_5_horizontal_position": 85,
+              "product_5_vertical_position": 85
+            }
+          }
+        },
+        "block_order": [
+          "1618912973f5aa3d4d-0",
+          "339b2139-d545-4434-a9c7-3f312861f4b0",
+          "65d92cc7-e01a-49bf-b94c-b33eae058c98",
+          "708b33c4-a577-4021-abf8-6e46cd2ed658",
+          "3fc8bc27-9a68-4e1c-899e-c143f871ec06",
+          "fbc32091-e897-4039-8d40-d8add2fda018",
+          "23367dc0-59eb-4784-a85b-e61a8f091569",
+          "b89e609b-73be-4881-b99d-8973e98fe12f",
+          "6e28ad80-4e2f-4fd1-982c-677c53070621",
+          "80aa499b-19e9-4a60-9ec7-42848f73341c",
+          "5b1cc086-56ba-40b5-aedf-713d238403ee",
+          "754a7dd7-f27b-4527-abcb-4dd5b2af5d7b"
+        ],
+        "settings": {
+          "subheading": "",
+          "title": "",
+          "show_mobile_product_info": false,
+          "product_color": "#000000",
+          "text_block_title": "Fougères",
+          "text_block_content": "Chapitre 10 \/ Juin 2021 \nphotographie : Romain Dumas\nillustration : Stéphanie Viot\nset design : Maxime Chaiblaine"
+        }
+      },
+      "image-with-text-block-a-propos": {
+        "type": "image-with-text-block-a-propos",
+        "settings": {
+          "subheading": "",
+          "title": "à propos",
+          "image": "shopify:\/\/shop_images\/AT-chaper-2.jpg",
+          "image_position": "right",
+          "content": "<p><strong>C’est dans les années 1960\/1970 que se développe le concept d’appartements témoins, des reconstitutions à l&#x27;identique de logements pour y être témoin de l’aménagement intérieur - mobilier et objets du quotidien – élaboré à cette époque. À l’image de ces premiers appartements témoins, la marque de décoration Appartement Témoin se veut témoin du passé, témoin de cette époque ayant révolutionnée le confort moderne, où il était nécessaire d’aménager l’espace pour que celui-ci soit pratique et moderne.<\/strong><\/p><p><strong>Dans un monde où règne l’uniformité, nous pensons qu’il est nécessaire d’agencer un espace pour lui donner une âme, et ainsi faire le choix d’un design responsable, authentique et unique. Appartement Témoin symbolise ce doux mélange entre l’idéal d’une époque révolue, et les valeurs de notre époque actuelle. <\/strong><\/p><p><strong>Aujourd&#x27;hui, Appartement Témoin c’est une marque de décoration qui propose une sélection d’objets uniques, choisis avec soin pour leur singularité. C’est une nouvelle façon de concevoir et d’aménager son intérieur : nous sommes convaincue qu’il est nécessaire de recycler, de décorer avec de la « récup » et de valoriser l’artisanat. Chaque objet est chiné ou conçu avec soin, nettoyé et restauré. <\/strong><\/p><p><strong>Appartement Témoin c’est aussi privilégier l’imaginaire, laisser notre clientèle s’approprier nos objets à travers nos mises en scène, conçues pour laisser l’esprit vagabonder. Chaque objet a une histoire que nous tentons de reconstituer ou d’inventer. Nos clients mais aussi, les professionnels que nous accompagnons en France et à l’étranger : AESOP, Sézane, Pierre Yovanovitch, Rose Uniacke... l&#x27;ont bien compris. <\/strong><\/p>",
+          "link_text": ""
+        }
+      },
+      "cart-template": {
+        "type": "cart-template",
+        "settings": {
+          "show_shipping_estimator": true,
+          "shipping_estimator_default_country": "France"
+        }
+      },
+      "page-contact-template": {
+        "type": "page-contact-template",
+        "blocks": {
+          "a02e1529-df8a-427d-a291-1f0887259342": {
+            "type": "text",
+            "settings": {
+              "title": "Votre nom de société",
+              "use_long_text": false,
+              "is_required": false
+            }
+          },
+          "e7964170-0b7c-4c24-8835-ea921914144e": {
+            "type": "text",
+            "settings": {
+              "title": "Votre adresse ou localisation",
+              "use_long_text": false,
+              "is_required": true
+            }
+          },
+          "page-contact-template-0": {
+            "type": "text",
+            "settings": {
+              "title": "Votre numéro de téléphone",
+              "use_long_text": false,
+              "is_required": false
+            }
+          }
+        },
+        "block_order": [
+          "a02e1529-df8a-427d-a291-1f0887259342",
+          "e7964170-0b7c-4c24-8835-ea921914144e",
+          "page-contact-template-0"
+        ],
+        "settings": {}
+      },
+      "page-faq-template": {
+        "type": "page-faq-template",
+        "blocks": {
+          "page-faq-template-0": {
+            "type": "separator",
+            "settings": {
+              "title": "Shipping"
+            }
+          },
+          "page-faq-template-1": {
+            "type": "question",
+            "settings": {
+              "title": "Do you ship overseas?",
+              "answer": "<p>Yes, we ship all over the world. Shipping costs will apply, and will be added at checkout. We run discounts and promotions all year, so stay tuned for exclusive deals.<\/p>"
+            }
+          },
+          "page-faq-template-2": {
+            "type": "question",
+            "settings": {
+              "title": "How long will it take to get my order?",
+              "answer": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.<\/p>"
+            }
+          },
+          "page-faq-template-3": {
+            "type": "question",
+            "settings": {
+              "title": "What shipping carriers do you use?",
+              "answer": "<p>We use all major carriers, and local courier partners. You’ll be asked to select a delivery method during checkout.<\/p>"
+            }
+          },
+          "page-faq-template-4": {
+            "type": "separator",
+            "settings": {
+              "title": "Product"
+            }
+          },
+          "page-faq-template-5": {
+            "type": "question",
+            "settings": {
+              "title": "Can I return my product?",
+              "answer": "<p>We always aim for make sure our customers love our products, but if you do need to return an order, we’re happy to help. Just email us directly and we’ll take you through the process.<\/p>"
+            }
+          },
+          "page-faq-template-6": {
+            "type": "question",
+            "settings": {
+              "title": "Can I get my product personalized?",
+              "answer": "<p>It depends on the creator and the product. All options are outlined on the product page, so look out for customization options there.<\/p>"
+            }
+          },
+          "page-faq-template-7": {
+            "type": "separator",
+            "settings": {
+              "title": "Other"
+            }
+          },
+          "page-faq-template-8": {
+            "type": "question",
+            "settings": {
+              "title": "Any question?",
+              "answer": "<p>You can contact us through our contact page! We will be happy to assist you.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "page-faq-template-0",
+          "page-faq-template-1",
+          "page-faq-template-2",
+          "page-faq-template-3",
+          "page-faq-template-4",
+          "page-faq-template-5",
+          "page-faq-template-6",
+          "page-faq-template-7",
+          "page-faq-template-8"
+        ],
+        "settings": {}
+      },
+      "pages_list_chapitres": {
+        "type": "pages_list_chapitres",
+        "blocks": {
+          "5ebbd562-091f-49a9-a092-5a1174b3846c": {
+            "type": "chapitre",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Appartement_Temoin_-_chapitre_cite_imperiale.jpg",
+              "content": "<p>Cité impériale<\/p>",
+              "link_url": "shopify:\/\/collections\/cite-imperiale",
+              "margin_top": 20,
+              "margin_bottom": 17
+            }
+          },
+          "0a018d44-9492-4a63-aa17-4b27e8bf4c67": {
+            "type": "chapitre",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Appartement_temoin_-_Chapitre_catalogue.jpg",
+              "content": "<p>Catalogue<\/p>",
+              "link_url": "shopify:\/\/collections\/catalogue",
+              "margin_top": 0,
+              "margin_bottom": 7
+            }
+          },
+          "9d3408de-7f7a-453d-b1bf-f498e2110168": {
+            "type": "chapitre",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Appartement_Temoin_-_une_chambre_a_soi.jpg",
+              "content": "<p>A room of one's own<\/p>",
+              "link_url": "shopify:\/\/collections\/a-room-of-ones-own",
+              "margin_top": 9,
+              "margin_bottom": 0
+            }
+          },
+          "2cb54754-ec46-43df-a2bb-d4356dd149be": {
+            "type": "chapitre",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Appartement_Temoin_-_Chapitre_Sudoku_and_the_mooons.jpg",
+              "content": "<p>Sudoku & the mooons<\/p>",
+              "link_url": "shopify:\/\/collections\/sudoku-the-mooons",
+              "margin_top": 22,
+              "margin_bottom": 15
+            }
+          },
+          "8287c288-ecaa-4f81-8d13-d7df0888c413": {
+            "type": "chapitre",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Appartement_Temoin_-_Chapitre_plantes_d_interieur.jpg",
+              "content": "<p>Plantes d'intérieur<\/p>",
+              "link_url": "shopify:\/\/collections\/plantes-dinterieur",
+              "margin_top": 19,
+              "margin_bottom": 0
+            }
+          },
+          "cdf227b7-0729-4d81-87b2-433c663d8bb5": {
+            "type": "chapitre",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/NouvelHairPhotosSPORTY.jpg",
+              "content": "<p>Nouvel'Hair<\/p>",
+              "link_url": "shopify:\/\/collections\/nouvelhair",
+              "margin_top": 0,
+              "margin_bottom": 23
+            }
+          }
+        },
+        "block_order": [
+          "5ebbd562-091f-49a9-a092-5a1174b3846c",
+          "0a018d44-9492-4a63-aa17-4b27e8bf4c67",
+          "9d3408de-7f7a-453d-b1bf-f498e2110168",
+          "2cb54754-ec46-43df-a2bb-d4356dd149be",
+          "8287c288-ecaa-4f81-8d13-d7df0888c413",
+          "cdf227b7-0729-4d81-87b2-433c663d8bb5"
+        ],
+        "settings": {
+          "subheading": "<p>Nous inventons des histoires grâce à des mises en espace et évènements. Chaque histoire est présentée sous forme de CHAPITRE avec une collection d’objets vintage associée.<\/p>",
+          "title": "CHAPITRES",
+          "image_position": "right",
+          "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
+          "link_text": ""
+        }
+      },
+      "blog-template": {
+        "type": "blog-template",
+        "settings": {
+          "show_rss": false,
+          "show_tags": false,
+          "show_featured_article": true,
+          "show_category": false
+        }
+      },
+      "shop-now": {
+        "type": "shop-now",
+        "settings": {
+          "show_section": false,
+          "title": "Shop now",
+          "collection": "",
+          "grid_items_count": 6,
+          "show_product_info": true,
+          "show_vendor": false,
+          "show_color_swatch": false
+        }
+      },
+      "16221269157fe6da24": {
+        "type": "slideshow-mobile",
+        "blocks": {
+          "16221269157fe6da24-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Appartement_Temoin_-_Chapitre_plantes_d_interieur.jpg",
+              "apply_overlay": true,
+              "content_position": "bottomCenter",
+              "subheading": "",
+              "title": "",
+              "button_1_text": "voir le chapitre",
+              "button_1_link": "shopify:\/\/collections\/fougeres",
+              "button_2_text": ""
+            }
+          },
+          "16221269157fe6da24-1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Appartement_Temoin_-_Chapitre_Sudoku_and_the_mooons.jpg",
+              "apply_overlay": true,
+              "content_position": "bottomCenter",
+              "subheading": "",
+              "title": "",
+              "button_1_text": "voir le chapitre",
+              "button_1_link": "shopify:\/\/collections\/fougeres",
+              "button_2_text": ""
+            }
+          }
+        },
+        "block_order": [
+          "16221269157fe6da24-0",
+          "16221269157fe6da24-1"
+        ],
+        "settings": {
+          "show_fullscreen": false,
+          "show_arrow": false,
+          "autoplay": true,
+          "cycle_speed": 5,
+          "text_color": "#ffffff",
+          "button_color": "#363636",
+          "button_background": "#ffffff"
         }
       }
     },
@@ -650,7 +1356,8 @@
       "slideshow",
       "16164219358990a602",
       "1616421999bf4ac604",
-      "1616588492b744b90b",
+      "161891297359d781b5",
+      "16221269157fe6da24",
       "16164220335f9ae374"
     ]
   },

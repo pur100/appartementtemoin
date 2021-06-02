@@ -12,9 +12,8 @@
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
-    font-family: 'FuturaPTBook';
+    font-family: 'FuturaBook';
     src: url('FuturaPT-Book.woff2') format('woff2'),
         url('FuturaPT-Book.woff') format('woff');
     font-weight: normal;
@@ -23,22 +22,28 @@
 }
 
 @font-face {
-    font-family: 'FuturaPTDemi';
-    src: url('FuturaPTDemi.woff2') format('woff2'),
-        url('FuturaPTDemi.woff') format('woff');
-    font-weight: normal;
+    font-family: 'FuturaDemi';
+    src: url('FuturaPT-Demi.woff2') format('woff2'),
+        url('FuturaPT-Demi.woff') format('woff');
+    font-weight: 600;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'FuturaPT';
-    src: url('FuturaPT-Light.woff2') format('woff2'),
-        url('FuturaPT-Light.woff') format('woff');
-    font-weight: 300;
+    font-family: 'FuturaPTLight';
+    src:url('FuturaPTLight.woff') format('woff'),
+        url('FuturaPTLight.woff2') format('woff2'),
+        url('FuturaPTLight.eot'),
+        url('FuturaPTLight.eot?#iefix') format('embedded-opentype'),
+        url('FuturaPTLight.otf') format('truetype');
+
+    font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
+
+
 
 @font-face {
     font-family: 'MinionPro';
@@ -62,18 +67,90 @@ html {
   }
 }
 
+// weglot
+
+
+
+.wg-list.country-selector.yellow_glot {
+  a {
+      color: black!important;
+    }
+
+    .wgcurrent::after {
+      color: black!important;
+    }
+}
+
+.Form__ItemHelp {
+  font-size: 1rem;
+}
+
+.no_show {
+  display: none;
+}
+
+.show_me {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
 .Header__Logo .Heading {
-  font-family: 'SharpGrotesk';
+  font-family: 'SharpGrotesk' ;
   text-transform: lowercase;
-  font-size: 3.8rem !important;
+  font-size: 3.3rem !important;
+}
+
+@media (min-width: 1800px)  {
+    .Header__Logo .Heading {
+      font-family: 'SharpGrotesk' ;
+      text-transform: lowercase;
+      font-size: 3.8rem !important;
+    }
+  }
+
+p {
+  font-size: 1.5rem;
+}
+
+.f_demi {
+  font-family: 'FuturaDemi';
+}
+
+span {
+      font-family: 'FuturaPTLight' ;
 }
 
 
 
+.f_light  .Rte, p, h1, h2, h3, h4, h5, h6, a, pre, .Button {
+    font-family: 'FuturaPTLight';
+    font-weight: normal;
+    font-style: normal;
+}
+
+.f_book, .Header__MainNav .Heading  {
+    font-family: 'FuturaBook';
+    font-style: normal;
+    font-size: 1.4rem;
+}
+
 // GENERAL
+
+.desktop {
+  display: block;
+}
+
+.mobile {
+  display: none;
+}
 
 .show_me {
   display: block !important;
+}
+
+#block-16164220335f9ae374-0 {
+  margin-bottom: 5rem;
 }
 
 .shopify-section--bordered {
@@ -85,16 +162,45 @@ html {
   margin-left: 4.2rem;
 }
 
+.HorizontalList--spacingLoose .HorizontalList__Item {
+    margin-right: 11px !important;
+    margin-left: 14px;
+}
+
 
 .Image--contrast::after {
     content: none;
     background-image:none;
 }
 
+.Form__Title {
+  font-size: 1.6rem!important;
+  font-family: 'FuturaDemi'!important;
+}
+
+
+
+// cart
+
+.Drawer__Title {
+  font-family: 'FuturaDemi';
+}
+
 // HEADER
+
+.bordering #first_link {
+  letter-spacing: 2px;
+  border-bottom: 1px solid black !important;
+  font-family: 'FuturaDemi';
+}
+
 
 .Header {
   box-shadow: none;
+}
+
+#Search .ProductItem__Info {
+  margin-bottom: 3rem!important;
 }
 
 .Search {
@@ -102,6 +208,15 @@ html {
   z-index: 999 !important;
   width: 30%;
   right: 0;
+  .Search__Input {
+    font-size: 1.6rem !important;
+    letter-spacing: 1px;
+    font-family:"FuturaBook";
+    text-transform: lowercase !important;
+  }
+  .Search__InputIconWrapper {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 641px) {
@@ -115,31 +230,68 @@ html {
   text-transform: lowercase !important;
 }
 
+.Header__Wrapper.Header__Wrapper, .Header__MainNav {
+    padding-bottom: 0px !important;
+}
+
 .MegaMenu__Inner {
     grid-template-columns: repeat(auto-fit, minmax(120px, 6fr)) !important;
+    max-width: 160rem !important;
+
+}
+
+.MegaMenu {
+    padding: 10px 0px 5px 0px;
+}
+
+.MegaMenu__Item .Linklist .Link--secondary {
+  font-family: "FuturaBook";
+  line-height: 1.8rem;
 }
 
 .yellow {
   background-color: #ffe000!important;
 }
+.Header__MainNav .Heading.u-h6 {
+  letter-spacing: 2px;
+}
+
+.underscore {
+  .wholeBoutique {
+    border-bottom: 1px solid black!important;
+    font-family: 'FuturaDemi' !important;
+    font-weight: bold !important;
+  }
+}
+
+.Header__MainNav {
+  cursor:pointer;
+}
+.Header__MainNav .Heading.u-h6:hover {
+    border-bottom: 1px solid black;
+    font-family: 'FuturaDemi' !important;
+    font-weight: bold !important;
+  }
 
 .Header__Wrapper {
   .Heading.Link, .Link--secondary {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     text-transform: lowercase;
-    letter-spacing: 1px;
   }
   .Heading {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     letter-spacing: 1px;
   }
   .MegaMenu__Title {
-    font-weight: bold;
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+    font-family: 'FuturaDemi' !important;
+    line-height: 1.8rem;
   }
 
   .Header__CartCount {
-    padding: 0px 4px 0px 5px;
-    font-size: 14px !important;
+    padding: 0px 3px 0px 4px;
+    font-size: 1rem;
     border-radius: 100%;
   }
 }
@@ -149,6 +301,9 @@ html {
     color: #ffe000 !important;
   }
 }
+
+
+
 
 
 .yellow .Header__CartCount {
@@ -162,7 +317,7 @@ html {
   }
 }
 
-.Header--black.Header--down {
+.Header--down {
   background: rgba(255,255,255,0.4);
 }
 
@@ -182,9 +337,14 @@ html {
   background: #ffe000 !important;
 }
 
-.yellow  .Header__CartCount {
+.Header--initialized.yellow  .Header__CartCount {
   color: #ffe000 !important;
   background: black !important;
+}
+
+.Header--initialized .Header__CartCount {
+  background:#ffe000;
+  color: black !important;
 }
 
 .Header--transparent .Header__CartCount {
@@ -192,29 +352,126 @@ html {
   background: #ffe000 !important;
 }
 
+// SECTION 1
 
-// SECTION 02
-
-@media screen and (min-width: 1140px) {
-  .CollectionItem__Wrapper--large {
-      height: 900px!important;
-  }
+#shopify-section-slideshow .flickity-viewport {
+  height: 100vh !important;
 }
 
 
+// SECTION 02
+
+  .CollectionItem__Wrapper--large {
+      height: 70rem!important;
+  }
+
+  @media screen and (min-width: 1640px) {
+    .CollectionItem__Wrapper--large {
+        height: 102rem !important;
+    }
+  }
+
+// SECTION 02
+
+ #section-16164219358990a602 {
+  border-bottom: 1px solid black;
+  margin-bottom: 7rem !important;
+  width: 96%;
+  margin: 0 auto;
+}
+
+// Collection list
+
+#shopify-section-1616421999bf4ac604,#shopify-section-161891297359d781b5 {
+  padding: 0px 1.9rem;
+}
+
+#shopify-section-16164220335f9ae374 .SectionFooter {
+  margin-top: 3rem !important;
+}
 
 // COLLECTIONS
 
 @media screen and (min-width: 1008px) {
   .\31\/4--lap-and-up, .\33\/12--lap-and-up {
-      width: 20%!important;
+      padding: 0.8rem !important;
   }
 }
+
+#shopify-section-collection-template {
+  @media screen and (min-width: 1008px){
+    .\31\/4--lap-and-up, .\33\/12--lap-and-up {
+      width: 20%;
+  }
+  }
+
+  .Popover--positionBottom::before {
+    content: none !important;
+  }
+
+  .CollectionToolbar__Item--filter .Text--subdued,.filterCount  {
+    font-size: 1rem!important;
+  }
+  .Container {
+    padding: 0 40px;
+  }
+  .SectionHeader__Description.Rte {
+    text-align: left;
+    margin-left: 1rem;
+  }
+
+  .Drawer__Main {
+    .Collapsible__Button {
+      font-size: 1.3rem;
+      font-family: 'FuturaBook';
+      letter-spacing: 2px;
+    }
+    .Linklist__Item > .Link {
+        font-size: 1.6rem;
+        text-transform: lowercase;
+        letter-spacing: 1px;
+        font-family: 'FuturaPTLight';
+    }
+  }
+}
+
+#collection-sort-popover {
+  box-shadow: none !important;
+  [data-value="best-selling"], [data-value="title-ascending"], [data-value="title-descending"], [data-value="created-ascending"], [data-value="created-descending"] {
+    display:none;
+  }
+  .Popover__Value {
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    font-family: 'FuturaPTLight';
+    text-transform: lowercase;
+  }
+}
+
+.ProductList {
+  margin: 0 auto !important;
+
+}
+
+.CollectionToolbar__Item {
+  font-size: 1.6rem!important;
+  font-family: 'FuturaPTLight';
+  text-transform: lowercase!important;
+  letter-spacing: 1px!important;
+  padding-left: 0px !important;
+}
+
+.ProductList--grid {
+    padding: 0 40px;
+}
+
+
 
 .CollectionToolbar {
   box-shadow: none;
   position: absolute;
-  top: 20rem;
+  top: 12rem;
+  right: 0.5rem;
 }
 
 .CollectionToolbar__Item {
@@ -222,16 +479,93 @@ html {
 }
 
 .CollectionInner {
-    margin-top: 100px;
+    // margin-top: 280px;
 }
 
 .fil_dariane {
   text-transform: uppercase;
   font-size: 14px;
   text-align: left!important;
-  top: 3.5rem;
-  z-index: 99;
-  position:absolute;
+  letter-spacing: 2px;
+  z-index: 3;
+  position: absolute;
+  top: 14rem;
+  left: 4.9rem;
+  .ariane {
+    font-size: 1.6rem;
+  }
+  a:last-of-type h2{
+    font-family: 'FuturaDemi'!important;
+  }
+
+}
+
+.ProductItem__Info {
+  text-align: left;
+  margin-top: 4px;
+  * {
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+    margin:0;
+    font-weight: normal;
+  }
+  .ProductItem__Title, .ProductMeta__Title {
+    letter-spacing: 0px !important;
+    font-family: 'FuturaBook';
+    line-height: 1.6rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+  }
+  .cat_title {
+    text-transform: lowercase;
+  }
+}
+
+// pages
+
+#shopify-section-page-contact-template, .apropos  {
+  .u-h1 {
+    font-size: 1.6rem !important;
+    font-family: 'FuturaDemi' !important;
+  }
+}
+
+// liste de chapitres
+
+.title_block {
+  width: 40%;
+  margin-left: 5rem;
+  h2 {
+    font-family: 'FuturaDemi';
+    letter-spacing: 2px;
+    font-size: 1.6rem;
+  }
+  p {
+    font-family: 'FuturaDemi';
+    letter-spacing: 0px;
+    font-size: 1.8rem;
+  }
+}
+
+.chapitres_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  flex-wrap: wrap;
+
+  .chapitre {
+    width: 29%;
+    margin: 4rem 0px;
+    h4 p {
+      font-size: 1.6rem;
+      letter-spacing: 2px;
+      font-family: FuturaDemi!important;
+      text-transform: uppercase;
+      line-height: 1.8rem;
+      margin-top: 5px;
+    }
+  }
+
 }
 
 // Chapitres
@@ -240,15 +574,31 @@ html {
   display: block;
 }
 
+#shopify-section-161891297359d781b5 {
+  position: relative;
+  .block_text {
+    position: absolute;
+    right: -200px;
+    top:0px;
+    z-index: 999;
+    width: 180px;
+  }
+}
+
 .ShopTheLook {
   width: 80%;
   padding: 0;
   max-width: 120vw;
+  margin-left: 3rem !important;
   .flickity-viewport {
     // height: 80rem !important;
   }
 }
 
+#spot {
+  opacity: 0;
+  transition: all ease 0.6s;
+}
 
 .ShopTheLook__ProductItem .ProductItem__ImageWrapper {
     position: absolute;
@@ -257,7 +607,11 @@ html {
     left: 0;
     right: 0;
     z-index: 9;
+    max-width: 30rem;
 }
+
+
+
 
 
 .ShopTheLook__ProductList {
@@ -275,7 +629,24 @@ html {
   img {
     display: none;
   }
+  * {
+    text-align: center!important;
+    font-family: 'FuturaBook'!important;
+  }
+  .ProductItem__PriceList {
+    font-weight: 300;
+  }
+  .cat_title {
+    display:none;
+  }
+}
 
+#section-162124364603934c0f {
+  display:none;
+}
+
+#shopify-section-161891297359d781b5 {
+  margin-top: 8rem;
 }
 
 .ShopTheLook__ViewButton, .flickity-page-dots {
@@ -284,36 +655,45 @@ html {
 
 .ShopTheLook__ProductList {
   position: absolute;
-  right: 0;
-  top: 3%;
+  right: -5.4rem;
+  top: 2rem;
+}
+
+.block_text .block_title {
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  font-family: 'FuturaDemi' !important;
+  text-transform: uppercase;
+  line-height: 1.8rem;
 }
 
 
 .ShopTheLook__Dot::after {
-    position: absolute;
-    content: "";
-    width: 20px;
-    height: 20px;
-    left: -5px;
-    top: -5px;
-    border-radius: 100%;
-    background: rgba(255, 255, 255, 0.6);
-    -webkit-animation: 1.4s shopTheLookDotKeyframe ease-in-out infinite;
-    animation: 1.4s shopTheLookDotKeyframe ease-in-out infinite;
+    content: none;
 }
 
 .ShopTheLook__Dot {
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
 
 }
 
 // collection list
 
-.list_title {
+.SectionHeader__Description {
+  font-size: 1.5rem;
+  font-family: 'FuturaPTLight';
+  font-weight: 400;
+}
+
+.list_title, .featured_title {
+  text-transform: uppercase;
+  letter-spacing: 2px;
   text-align: center;
   width: 100%;
-  font-size: 2.4rem;
+  font-size: 2.2rem;
+  font-family: 'FuturaBook' !important;
+
 }
 
 .list_subtitle {
@@ -322,12 +702,20 @@ html {
   font-size: 1.8rem;
 }
 
+
+
 // nouveautés
 
 #shopify-section-16164220335f9ae374 {
+  .SectionHeader:not(:only-child) {
+      margin-bottom: 2rem;
+  }
   .SectionHeader__Heading {
     margin-left: 0;
     text-align: center;
+  }
+  section {
+    padding-bottom: 2rem;
   }
 }
 
@@ -339,11 +727,143 @@ html {
   border-bottom: 1px solid black;
   text-align: center;
   padding: 6px 0px;
+  font-size: 1.4rem;
 }
+
+.ProductMeta__Vendor {
+  letter-spacing: 0!important;
+  text-transform: lowercase!important;
+  font-size: 1.3rem!important;
+}
+
+.ProductMeta__Title {
+    font-size: 2.2rem !important;
+    font-family: "FuturaBook";
+    letter-spacing: 0px !important;
+}
+
+
+
+.ProductMeta__Price {
+  font-family: 'FuturaPTLight' !important;
+  margin-top: -1rem;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+}
+
+.ProductMeta__Description {
+  p {
+    font-family: 'FuturaPTLight'!important;
+    letter-spacing: 1px!important;
+    font-size: 1.6rem!important;
+
+  }
+}
+
+// recently viewed & product recommendatiosn
+
+#shopify-section-product-recommendations {
+  .flickity-viewport {
+    margin: 0px 1.0rem !important;
+  }
+}
+#shopify-section-recently-viewed-products .flickity-viewport {
+    margin: 0px 0.2rem 0rem 1.5rem !important;
+}
+
+#shopify-section-product-recommendations, #shopify-section-recently-viewed-products {
+  .Container {
+    padding: 0px;
+  }
+  .SectionHeader__Heading {
+    margin-left: 5rem;
+  }
+}
+
+// button
+.ProductForm__AddToCart:hover {
+  color: white !important;
+  background: black !important;
+}
+.ProductForm__AddToCart {
+  color: black;
+  font-size: 1.6rem;
+  font-family: 'FuturaBook' !important;
+  width: 62%;
+  transition: all ease 0.3s;
+  &::before {
+    background: transparent !important;
+  }
+}
+
+// a propos
+.apropos {
+  .Container {
+    padding: 0px;
+  }
+  .SectionHeader__Heading {
+    margin: 0;
+  }
+  .FeatureText__ContentWrapper {
+    padding-top: 0px;
+  }
+  .FeatureText__ContentWrapper, .FeatureText--withImage .FeatureText__ImageWrapper {
+      vertical-align: top;
+  }
+  .FeatureText__ImageWrapper {
+    padding-right: 5rem;
+  }
+  .FeatureText__Content {
+    max-width: unset;
+  }
+
+  .SectionHeader__Description p {
+    font-family: 'FuturaDemi' !important;
+    letter-spacing: 0px !important;
+    font-size: 1.8rem !important;
+  }
+}
+
+
+
+//contact
+
+#shopify-section-page-contact-template {
+  .Container {
+    padding: 0px;
+  }
+  .PageContent {
+    margin-left: 5rem;
+  }
+  .SectionHeader__Heading {
+      text-align: left;
+      margin-left: 5rem!important;
+  }
+  .PageContent p {
+    font-family: 'FuturaDemi' !important;
+    letter-spacing: 0px !important;
+    font-size: 1.8rem !important;
+  }
+}
+
+
 
 // footer
 
 #section-footer {
+  border-top: 1px solid black;
+  margin: 2%;
+  margin-bottom: 2rem;
+  padding-bottom: 0px;
+  .Footer__StoreName {
+    color: gray!important;
+  }
+
+  .Footer__Aside {
+      justify-content: flex-end;
+      width: 97%;
+      margin-top: 4rem !important;
+  }
   .Container {
     padding: 0 !important;
   }
@@ -353,17 +873,22 @@ html {
     white-space: nowrap;
     font-size: 7vw;
     text-align: center;
+    margin-top: 5rem;
   }
   .Footer__Inner {
     padding: 0 8rem;
   }
-  .Footer__Copyright {
-    margin-left: 3rem;
+  .Footer__Title {
+    letter-spacing: 2px;
+    font-family: 'FuturaBook' !important;
+  }
+
+  .Link {
+    letter-spacing: 1px;
   }
 
   .Footer__Title, .Link {
-    font-size: 1.8rem;
-    letter-spacing: 1px;
+    font-size: 1.6rem;
   }
   .Form__Input {
     border: transparent !important;
@@ -372,18 +897,280 @@ html {
   .Form__Submit {
     display: none;
   }
+
+  .Footer__PaymentList {
+    position: absolute;
+    bottom: 30rem;
+    right: 12rem;
+  }
 }
 
 
+
+@media screen and (min-width: 1800px) {
+  .Footer__PaymentList {
+    position: absolute;
+    bottom: 37rem !important;
+    right: 12rem;
+  }
+}
+
 // MOBILE
 
-@media screen and (max-width: 798px) {
-  .Header__LogoLink {
-    margin-left: 12%;
+@media screen and (max-width: 1040px) {
+  .desktop {
+    display: none !important;
+  }
+
+  .mobile {
+    display: block !important;
+  }
+
+  .Header__CartCount {
+    font-size:2rem!important;
+  }
+
+  .CollectionMain, #shopify-section-16164220335f9ae374 {
+    .ProductList--grid {
+        padding: 0 3rem 0 1rem !important
+    }
+  }
+
+  //produit
+
+.ProductMeta__Description .Rte p {
+  font-size: 2rem;
+}
+
+  .flickity-viewport {
+    img {
+      object-fit: cover;
+    }
+  }
+
+  .Slideshow__Carousel, .Slideshow__Carousel .flickity-viewport, .Slideshow__Slide {
+    height: 102vh !important;
+
+  }
+
+  .Header__Logo .Heading {
+    font-size: 2.6rem !important;
+    white-space: nowrap;
   }
 
   .Header--transparent .Header__CartCount {
       margin-left: 1rem;
+  }
+
+  .SidebarMenu .Drawer__Content::before {
+      background-image: none!important;
+  }
+
+  .SidebarMenu .Text--subdued {
+    color: black;
+    font-size: 3.2rem;
+    text-transform: lowercase;
+  }
+
+  .SidebarMenu .Collapsible__Button.Link--primary {
+    margin-top: -4rem;
+    margin-bottom: -2rem;
+  }
+
+  .SidebarMenu .Collapsible {
+    border:none;
+  }
+
+  #sidebar-menu {
+    .Icon {
+      color: black;
+    }
+  }
+
+  .Drawer--fromLeft .Drawer__Container {
+      padding-left: 50px;
+  }
+
+  .SidebarMenu {
+      width: 100%;
+      background: #ffe000;
+      .Heading {
+        color: black !important;
+      }
+  }
+
+  .Search {
+    width: 76%;
+  }
+
+  .SectionHeader__Description {
+      font-size: 1.8rem;
+  }
+
+  .CollectionMain {
+    margin-top: 18rem!important;
+  }
+  .fil_dariane {
+      top: 14rem!important;
+      left: 3.4rem!important;
+  }
+
+
+.CollectionToolbar {
+
+  top: 34rem;
+}
+
+#shopify-section-collection-template .Container {
+    padding: 0px 2rem;
+}
+
+
+.ProductForm__AddToCart {
+  margin: 0 auto;
+}
+.ProductMeta__Description {
+  text-align: center;
+}
+
+//shop the look mobile
+
+#section-16221269157fe6da24 {
+  display:block;
+  .Slideshow__Carousel, .Slideshow__Carousel .flickity-viewport, .Slideshow__Slide {
+      height: 81vh!important;
+  }
+  .js .Slideshow--fullscreen {
+      height: 83vh !important;
+  }
+  .ButtonGroup__Item {
+    color: white!important;
+    text-transform: uppercase;
+    font-family: 'FuturaBook' !important;
+    letter-spacing: 2px;
+    background: none;
+    border: none;
+    text-decoration: underline;
+    font-size: 2.3rem;
+    transition: all ease 0.1s;
+    &::before {
+      content: none;
+    }
+  }
+}
+
+#shopify-section-16164220335f9ae374 {
+  margin-top: 0rem!important;
+  .Heading {
+    font-size: 2.2rem!important;
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+// chapitres
+
+.title_block {
+    width: 94%;
+    margin: 0 auto;
+}
+
+.ProductList--carousel .Carousel__Cell:first-child {
+    margin-left: 4%;
+}
+
+  // footer
+
+  #section-footer .Footer__Title, #section-footer .Link {
+      font-size: 1.6rem;
+      line-height: 3rem;
+  }
+
+  .Header__Icon .Icon--search {
+      position: relative;
+      top: 0px;
+      width: 18px;
+      height: 13px;
+  }
+
+
+  .wg-list.country-selector  {
+        bottom: 0 !important;
+        right: 4px !important;
+        top: unset !important;
+        left: unset !important;
+        position: absolute;
+  }
+
+  // menu
+
+  .Collapsible__Button.Heading {
+    color: black !important;
+    font-family: 'FuturaBook';
+    letter-spacing: 1px;
+    font-size: 2.8rem;
+  }
+
+  .Collapsible__Inner .Collapsible a, .Collapsible__Inner .Collapsible button {
+    padding: 24px 0px !important;
+
+  }
+
+  .Collapsible__Inner .Collapsible .Linklist__Item a {
+    padding:0px !important;
+  }
+
+  .Header__FlexItem.Header__FlexItem--fill {
+    a.Header__Icon {
+      position: absolute;
+      right: 7rem;
+    }
+  }
+
+  .apropos .SectionHeader__Description {
+    text-align: left;
+  }
+
+  .ProductMeta__Description p {
+      font-family: FuturaBook!important;
+      letter-spacing: 0!important;
+      font-size: 2.8rem!important;
+  }
+
+  .shipping {
+      font-size: 2.4rem;
+  }
+
+  .Footer {
+
+    .Footer__Inner {
+      display: flex;
+      flex-flow: wrap;
+      justify-content: space-between;
+      .Footer__Block {
+        width: 40%;
+        margin-top: 0px;
+        height: auto;
+        line-height: 6px !important;
+      }
+      .Footer__Title {
+          margin-bottom: 3px;
+          margin-top: 20px;
+      }
+    }
+    .Footer__PaymentList {
+        position: absolute;
+        bottom: 12rem !important;
+        right: 11rem !important;
+        width: 40%;
+        border-top: none;
+        svg {
+            opacity: 0.8;
+            width: 20px;
+            height: 24px;
+        }
+    }
   }
 }
 

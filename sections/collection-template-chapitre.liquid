@@ -119,7 +119,7 @@
           <div class="Container">
             <div class="SectionHeader SectionHeader--center">
               <div class="fil_dariane">
-                  <h3><a href="https://appartementtemoin.myshopify.com/collections">BOUTIQUE</a><a href="{{ collection.url }}"> / {{collection.title}}</a>{% if current_tags %}<a href="{{cool_url}}">/ {{current_tags}}</a>{% endif %}</h3>
+                  <h3><a class="ariane" href="https://appartementtemoin.myshopify.com/collections">BOUTIQUE</a><a href="{{ collection.url }}"> / {{collection.title}}</a>{% if current_tags %}<a class="ariane last_ariane" href="{{cool_url}}">/ {{current_tags | first}}</a>{% endif %}</h3>
               </div>
 
               {%- if collection.description != blank -%}

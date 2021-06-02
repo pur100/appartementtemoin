@@ -80,12 +80,16 @@
 
     {%- if show_product_info -%}
       <div class="ProductItem__Info {% unless use_horizontal %}ProductItem__Info--{{ settings.product_info_alignment }}{% endunless %}">
-        {%- if show_vendor -%}
-          <p class="ProductItem__Vendor Heading">{{ product.vendor }}</p>
-        {%- endif -%}
+        {% for tag in product.tags %}
+          {% if tag contains "Catégorie" %}
+            <h2 class="cat_title Heading">
+              <a href="/collections/{{ tag | split: "Catégorie_" | last}}">{{ tag | split: "Catégorie_" | last}}</a>
+            </h2>
+          {% endif %}
+        {% endfor %}
 
         <h2 class="ProductItem__Title Heading">
-          <a href="{{ product.url | within: collection }}">{{ product.title }}</a>
+          <a href="{{ product.url | within: collection }}" class="f_book">{{ product.title }}</a>
         </h2>
 
         {%- if show_color_swatch -%}
@@ -156,7 +160,9 @@
               {%- capture formatted_max_price -%}{{ product.price_max | money_without_trailing_zeros }}{%- endcapture -%}
               <span class="ProductItem__Price Price Text--subdued">{{ 'collection.product.from_price_html' | t: min_price: formatted_min_price, max_price: formatted_max_price }}</span>
             {%- else -%}
-              <span class="ProductItem__Price Price Text--subdued">{{ product.price | money_without_trailing_zeros }}</span>
+              {%- if product.available  -%}
+                  <span class="ProductItem__Price Price Text--subdued">{{ product.price | money_without_trailing_zeros }}</span>
+              {%- endif -%}
             {%- endif -%}
           </div>
 

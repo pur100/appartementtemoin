@@ -1073,7 +1073,6 @@ html {
 }
 
 body {
-  font-family: var(--text-font-family);
   font-weight: var(--text-font-weight);
   font-style: var(--text-font-style);
   color: var(--text-color);
@@ -1133,7 +1132,6 @@ body {
 }
 
 .Heading {
-  font-family: var(--heading-font-family);
   font-weight: var(--heading-font-weight);
   font-style: var(--heading-font-style);
   color: var(--heading-color);
@@ -1460,7 +1458,6 @@ input.spr-button-primary,
   font-size: calc(var(--base-text-font-size) - (var(--default-text-font-size) - 12px));
   text-align: center;
   letter-spacing: 0.2em;
-  font-family: var(--heading-font-family);
   font-weight: var(--heading-font-weight);
   font-style: var(--heading-font-style);
   background-color: transparent;
@@ -2696,7 +2693,6 @@ body:not(.is-tabbing) .flickity-enabled:focus {
   padding-bottom: 8px;
   font-size: calc(var(--base-text-font-size) - (var(--default-text-font-size) - 11px));
   text-transform: uppercase;
-  font-family: var(--heading-font-family);
   font-weight: var(--heading-font-weight);
   font-style: var(--heading-font-style);
   letter-spacing: 0.2em;
@@ -2856,7 +2852,6 @@ select::-ms-expand {
   padding-right: 15px;
   background: transparent;
   border: none;
-  font-family: var(--heading-font-family);
   font-weight: var(--heading-font-weight);
   font-style: var(--heading-font-style);
   font-size: inherit;
@@ -2885,7 +2880,6 @@ select::-ms-expand {
   padding: 2px 18px 2px 0;
   background: transparent;
   border: none;
-  font-family: var(--heading-font-family);
   font-weight: var(--heading-font-weight);
   font-style: var(--heading-font-style);
   text-transform: uppercase;
@@ -3305,7 +3299,6 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 .FeaturedMap__Store {
   display: block;
   margin-bottom: 1.2em;
-  font-family: var(--heading-font-family);
   font-weight: var(--heading-font-weight);
   font-style: var(--heading-font-style);
 }
@@ -4222,7 +4215,6 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   font-size: calc(var(--base-text-font-size) - (var(--default-text-font-size) - 12px));
   text-align: center;
   letter-spacing: 0.2em;
-  font-family: var(--heading-font-family);
   font-weight: var(--heading-font-weight);
   font-style: var(--heading-font-style);
   background: var(--button-background);
@@ -5167,7 +5159,6 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 .Rte h4,
 .Rte h5,
 .Rte h6 {
-  font-family: var(--heading-font-family);
   font-weight: var(--heading-font-weight);
   font-style: var(--heading-font-style);
   color: var(--heading-color);
@@ -5409,7 +5400,6 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 }
 .Table th,
 .Rte table th {
-  font-family: var(--heading-font-family);
   font-weight: var(--heading-font-weight);
   font-style: var(--heading-font-style);
   text-transform: uppercase;
@@ -9798,7 +9788,6 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
   margin-bottom: 0;
 }
 #shopify-product-reviews .spr-review-header-title {
-  font-family: var(--heading-font-family);
   font-weight: var(--heading-font-weight);
   font-style: var(--heading-font-style);
   font-size: calc(var(--base-text-font-size) - (var(--default-text-font-size) - 11px));
@@ -10881,7 +10870,6 @@ body:not(.features--show-image-zooming) .Image--lazyLoaded.Image--zoomOut {
 .Timeline__Nav {
   position: relative;
   font-size: calc(var(--base-text-font-size) - (var(--default-text-font-size) - 11px));
-  font-family: var(--heading-font-family);
   font-weight: var(--heading-font-weight);
   font-style: var(--heading-font-style);
   letter-spacing: 0.2em;

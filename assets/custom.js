@@ -22,26 +22,25 @@
  *   bubbles: true
  * }));
  */
+var products = document.querySelectorAll('#spot')
+var dot = document.querySelectorAll('.ShopTheLook__Dot').forEach(item => {
+  item.addEventListener('click', function(){
+      products.forEach(product => {
+      product.classList.add('show_me');
+      })
+  })
+})
+
+var menu = document.getElementById('MegaMenuForColor')
+var link = menu.parentNode
+menu.addEventListener('mouseover', function(){
+  link.classList.add('underscore')
+})
+
+menu.addEventListener('mouseleave', function(){
+  link.classList.remove('underscore')
+})
 
 
-
-
-// function addActiveToShop() {
-//   var shop = document.getElementById('shop_look_wrapper')
-//   shop.classList.add("show_me")
-// }
-
-// function removeActiveToShop() {
-//   var shop = document.getElementById('shop_look_wrapper')
-//   shop.classList.remove("show_me")
-// }
-
-// var dots = document.getElementsByClassName('ShopTheLook__Dot')
-
-// for (var i = 0; i < dots.length; i++) {
-//     dots[i].addEventListener('mouseenter', addActiveToShop, false);
-//     dots[i].addEventListener('mouseleave', removeActiveToShop, false);
-
-// }
 
 fitText(document.getElementById("h1"), 0.38);

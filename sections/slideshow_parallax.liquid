@@ -1,3 +1,5 @@
+
+
 {%- capture flickity_options -%}
 {
   "prevNextButtons": false,
@@ -50,13 +52,9 @@
             }
           </style>
 
-
-
-          {% assign image_url = block.settings.image | img_url: '1600x1600'  %}
-
-
           {%- if block.settings.image -%}
-            <div class="parrallax_img" style="height:100vh; width: 100vw;background-image: url({{ image_url }})">
+            <div class="parrallax_img" style="height:100vh; width: 100vw;background-image: url('https://cdn.shopify.com/s/files/1/0515/0323/5228/files/FOUGERE.jpg?v=1620299278')">
+              <h1>hey</h1>
             </div>
           {%- else -%}
             <div class="Slideshow__ImageContainer {% if block.settings.apply_overlay %}Image--contrast{% endif %} {% if section.settings.show_fullscreen %}PlaceholderBackground{% endif %} PlaceholderSvg--dark">

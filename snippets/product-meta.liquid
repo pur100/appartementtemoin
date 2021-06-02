@@ -4,11 +4,11 @@
       {%- assign vendor_handle = product.vendor | handle -%}
       {%- assign collection_for_vendor = collections[vendor_handle] -%}
 
-      {%- unless collection_for_vendor.empty? -%}
-        <a href="{{ collection_for_vendor.url }}">{{ product.vendor }}</a>
-      {%- else -%}
-        {{- product.vendor -}}
-      {%- endunless -%}
+      {% for tag in product.tags %}
+        {% if tag contains "Catégorie" %}
+            <a href="/collections/{{ tag | split: "Catégorie_" | last}}">{{ tag | split: "Catégorie_" | last}}</a>
+        {% endif %}
+      {% endfor %}
     </h2>
   {%- endif -%}
 
@@ -25,14 +25,18 @@
   {%- endif -%}
 
   {%- if product.template_suffix != 'coming-soon' -%}
-    <div class="ProductMeta__PriceList Heading">
-      {%- if product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price -%}
-        <span class="ProductMeta__Price Price Price--highlight Text--subdued u-h4">{{ product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</span>
-        <span class="ProductMeta__Price Price Price--compareAt Text--subdued u-h4">{{ product.selected_or_first_available_variant.compare_at_price | money_without_trailing_zeros }}</span>
-      {%- else -%}
-        <span class="ProductMeta__Price Price Text--subdued u-h4">{{ product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</span>
-      {%- endif -%}
-    </div>
+    {% if product.available %}
+      <div class="ProductMeta__PriceList Heading">
+        {%- if product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price -%}
+
+          <span class="ProductMeta__Price Price Price--highlight Text--subdued u-h4">{{ product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</span>
+          <span class="ProductMeta__Price Price Price--compareAt Text--subdued u-h4">{{ product.selected_or_first_available_variant.compare_at_price | money_without_trailing_zeros }}</span>
+        {%- else -%}
+          <span class="ProductMeta__Price Price Text--subdued u-h4">{{ product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</span>
+        {%- endif -%}
+      </div>
+    {% endif %}
+
 
     <div class="ProductMeta__UnitPriceMeasurement" style="display: {%- if product.selected_or_first_available_variant.unit_price_measurement -%}block{% else %}none{% endif %}">
       <div class="UnitPriceMeasurement Heading u-h6 Text--subdued">

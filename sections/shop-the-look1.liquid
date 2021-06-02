@@ -22,22 +22,25 @@
 }
 {%- endcapture -%}
 
-<section class="Section " data-section-id="{{ section.id }}" data-section-type="shop-the-look">
+<section class="Section desktop" data-section-id="{{ section.id }}" data-section-type="shop-the-look">
   {%- if section.settings.subheading != blank or section.settings.title != blank -%}
-    <header class="SectionHeader SectionHeader--center">
+    <header class="SectionHeader SectionHeader--center" style="margin-top: 5rem; margin-bottom: 2rem;">
       <div class="Container">
         {%- if section.settings.subheading != blank -%}
           <h3 class="SectionHeader__SubHeading Heading u-h6">{{ section.settings.subheading | escape }}</h3>
         {%- endif -%}
 
         {%- if section.settings.title != blank -%}
-          <h2 class="SectionHeader__Heading Heading u-h1">{{ section.settings.title | escape }}</h2>
+          <h2 class="SectionHeader__Heading Heading u-h1" style="text-align: center;">{{ section.settings.title | escape }}</h2>
         {%- endif -%}
       </div>
     </header>
   {%- endif -%}
 
-  <div class="ShopTheLook Carousel" data-flickity-config='{{ flickity_options }}'>
+  <div class="wrappppp">
+
+  </div>
+  <div  class="ShopTheLook Carousel" data-flickity-config='{{ flickity_options }}'>
     {%- for block in section.blocks -%}
       {%- if block.settings.image == blank and block.settings.product_1 == blank and block.settings.product_2 == blank and block.settings.product_3 == blank and block.settings.product_4 == blank and block.settings.product_5 == blank -%}
         {%- assign show_on_boarding = true -%}
@@ -98,11 +101,9 @@
               {%- assign product_horizontal_position = block.settings[product_horizontal_position_setting] -%}
               {%- assign product_vertical_position = block.settings[product_vertical_position_setting] -%}
 
-              <span href="#spot" class="ShopTheLook__Dot ShopTheLook__Dot--{{ block.settings.dot_style }} {% if forloop.first %}is-active{% endif %}" data-product-index="{{ i }}" style="left: {{ product_horizontal_position }}%; top: {{ product_vertical_position }}%"></span>
+              <span href="" class="ShopTheLook__Dot ShopTheLook__Dot--{{ block.settings.dot_style }} {% if forloop.first %}is-active{% endif %}" data-product-index="{{ i }}" style="left: {{ product_horizontal_position }}%; top: {{ product_vertical_position }}%"></span>
 
-              <button type="button" class="ProductForm__LabelLink Link Text--subdued" data-action="open-modal" aria-controls="modal-product">
-                        OPEN
-              </button>
+
 
               <div id="modal-product" class="Modal Modal--dark Modal--fullScreen Modal--pageContent" aria-hidden="true" role="dialog" data-scrollable>
                 <header class="Modal__Header">
@@ -210,7 +211,6 @@
           <button class="Popover__Close Icon-Wrapper--clickable" data-action="close-popover">{% render 'icon' with 'close' %}</button>
           <span class="Popover__Title Heading u-h4">{{ 'home_page.shop_the_look.popover_title' | t }}</span>
         </header>
-
         <div class="Popover__Content">
           <div class="ShopTheLook__ProductList Carousel" data-flickity-config='{{ flickity_mobile_inner_options }}' data-look-index="{{ forloop.index0 }}">
             {{ shop_the_look_products }}
@@ -218,6 +218,10 @@
         </div>
       </div>
     {%- endfor -%}
+    <div class="block_text">
+      <h3 class="block_title">{{ section.settings.text_block_title }}</h3>
+      <p class="block_content">{{ section.settings.text_block_content }}</p>
+    </div>
   </div>
 
   <div class="ShopTheLook__DiscoverButtonWrapper hidden-lap-and-up">
@@ -225,6 +229,8 @@
       {{- 'home_page.shop_the_look.view_products' | t -}}
     </button>
   </div>
+
+
 </section>
 
 <style>
@@ -232,8 +238,10 @@
   .ShopTheLook .ProductItem__Info {
     padding: 10px;
     color: {{section.settings.product_color}};
-    border: 2px solid {{section.settings.product_color}};
+    background: rgba(255,255,255,0.7);
   }
+
+
 
   .ShopTheLook .ProductItem__Info .ProductItem__Title, .ShopTheLook .ProductItem__Info .ProductItem__Price {
     color: {{section.settings.product_color}} !important;
@@ -275,6 +283,18 @@
       "id": "product_color",
       "label": "Couleur de block produit",
       "default": "#FFFFFF"
+    },
+    {
+      "type": "text",
+      "id": "text_block_title",
+      "label": "Block title",
+      "default": "Fougères"
+    },
+    {
+      "type": "textarea",
+      "id": "text_block_content",
+      "label": "Block content",
+      "default": "Fougères"
     }
   ],
   "blocks": [
@@ -479,3 +499,4 @@
   ]
 }
 {% endschema %}
+

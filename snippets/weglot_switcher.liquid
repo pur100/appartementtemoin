@@ -1,0 +1,13 @@
+
+
+<!--Start Weglot Script-->
+{%- assign full_url = canonical_url | split: '://www.' | last | split: '://' | last -%}
+<link rel="alternate" hreflang="fr" href="{{ canonical_url }}">
+<link rel="alternate" hreflang="en" href="https://en.{{ full_url }}">
+<script type="text/javascript" src="https://cdn.weglot.com/weglot.min.js"></script>
+<script>
+    Weglot.initialize({
+        api_key: 'wg_f0fb83ec9ce84e93381fd13f8791c58d1'
+    });
+</script>
+<!--End Weglot Script-->

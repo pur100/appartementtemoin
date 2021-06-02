@@ -20,7 +20,7 @@
   {%- comment -%}This is the common part to both template{%- endcomment -%}
 
   {%- if collection.products_count > 0 -%}
-    {%- paginate collection.products by section.settings.grid_items_per_page -%}
+    {%- paginate collection.products by 999 -%}
       <div class="ProductListWrapper">
         <div class="ProductList ProductList--grid {% if paginate.pages > 1 %}ProductList--removeMargin{% endif %} Grid" data-mobile-count="{{ mobile_items_per_row }}" data-desktop-count="{{ desktop_items_per_row }}">
           {%- for product in collection.products -%}
@@ -102,32 +102,14 @@
             <div class="PageHeader__ImageWrapper {% if section.settings.apply_overlay %}Image--contrast{% endif %}" style="background-image: url({{ collection.image | img_url: '800x' }})"></div>
           </noscript>
 
-          <div class="Container">
-            <div class="SectionHeader SectionHeader--center">
 
-              {%- if collection.description != blank -%}
-                <div class="SectionHeader__Description Rte">
-                  {{- collection.description -}}
-                </div>
-              {%- endif -%}
-            </div>
-          </div>
         </header>
         </div>
       {%- else -%}
-        <header class="PageHeader" style="margin-top: 16rem">
+        <header class="PageHeader collection_pageHeader" style="">
           <div class="Container">
             <div class="SectionHeader SectionHeader--center">
-              <div class="fil_dariane">
 
-                  <h3><a href="https://appartementtemoin.myshopify.com/collections">BOUTIQUE</a><a href="{{ collection.url }}"> / {{collection.title}}</a>{% if current_tags %}<a href="{{cool_url}}">/ {{current_tags}}</a>{% endif %}</h3>
-              </div>
-
-              {%- if collection.description != blank -%}
-                <div class="SectionHeader__Description Rte">
-                  {{- collection.description -}}
-                </div>
-              {%- endif -%}
             </div>
           </div>
         </header>
@@ -185,7 +167,7 @@
                           data-action="open-drawer"
                           data-drawer-id="collection-filter-drawer"
                           aria-label="{{ 'collection.filter.show_filter' | t }}">
-                    {{ 'collection.filter.title' | t }} {% if current_tags %}<span class="Text--subdued">({{ current_tags.size }})</span>{% endif %}
+                    {{ 'collection.filter.title' | t }} {% if current_tags %}<span class="Text--subdued filterCount">({{ current_tags.size }})</span>{% endif %}
                   </button>
                 {%- endif -%}
 
@@ -223,6 +205,11 @@
       FILTERS AND SORT BY POPOVER
       --------------------------------------------------------------------------------------------------------------------
       {%- endcomment -%}
+
+      <div class="fil_dariane">
+          <h3 style="display: flex;align-items: baseline;"><a class="ariane" style="{% if collection.handle == 'tous-les-produits' %}font-family: FuturaDemi!important;{% endif %}" href="https://appartementtemoin.myshopify.com/collections/tous-les-produits">TOUS LES OBJETS</a>{% unless collection.handle == 'tous-les-produits'%}<span style="font-size: 1.8rem; margin: 0 1rem;">/</span><a class="ariane" href="{{ collection.url }}"><h2>{{collection.title}}</h2></a>{% endunless %}{% if current_tags %}<span style="font-size: 1.8rem; margin: 0 1rem;">/</span><a class="ariane"href="{{cool_url}}"><h2>{{current_tags | first | replace: "_", " "}}</h2></a>{% endif %}</h3>
+      </div>
+
 
       {%- if show_filters -%}
         {%- comment -%}
@@ -291,7 +278,9 @@
                 {%- assign groups = groups | append: tag_parts.first | append: ',' -%}
               {% endfor %}
 
-              {%- assign color_label = 'color,colour,couleur,colore,farbe,색,色,färg,farve' | split: ',' -%}
+
+              <!-- ajouter 'couleurs' pour activer le color_swatch -->
+              {%- assign color_label = 'color, colour,couleur,colore,farbe,색,色,färg,farve' | split: ',' -%}
               {%- assign groups = groups | split: ',' | compact | uniq -%}
 
               {%- for group in groups -%}
@@ -313,7 +302,6 @@
                       <ul class="{% if show_color_swatch %}ColorSwatchList HorizontalList HorizontalList--spacingTight{% else %}Linklist{% endif %}">
                         {%- for tag in collection.all_tags -%}
                           {%- assign tag_parts = tag | split: '_' -%}
-
                           {%- if tag_parts.size < 2 or tag_parts.first != group or tag contains '__' -%}
                             {%- continue -%}
                           {%- endif -%}
@@ -374,14 +362,21 @@
             <button class="Popover__Close Icon-Wrapper--clickable" data-action="close-popover" aria-label="{{ 'general.popup.close' | t }}">{% render 'icon' with 'close' %}</button>
             <span class="Popover__Title Heading u-h4">{{ 'collection.sorting.title' | t }}</span>
           </header>
-
           <div class="Popover__Content">
             <div class="Popover__ValueList" data-scrollable>
               {% assign collection_sort_by = collection.sort_by | default: collection.default_sort_by %}
 
               {%- for option in collection.sort_options -%}
                 <button class="Popover__Value {% if option.value == collection_sort_by %}is-selected{% endif %} Heading Link Link--primary u-h6" data-value="{{ option.value }}" data-action="select-value">
-                  {{ option.name }}
+                  {% if option.name == 'En vedette' %}
+                      les plus récents
+                  {% elsif option.name == 'Prix: faible à élevé' %}
+                    prix croissants
+                  {% elsif option.name == 'Prix: élevé à faible' %}
+                    prix décroissants
+                  {% else %}
+                  {{option.name}}
+                  {% endif %}
                 </button>
               {%- endfor -%}
             </div>
@@ -395,6 +390,17 @@
       --------------------------------------------------------------------------------------------------------------------
       {%- endcomment -%}
 
+        <div class="Container">
+            <div class="SectionHeader SectionHeader--center">
+
+              {%- if collection.description != blank -%}
+                <div class="SectionHeader__Description Rte" style="margin-top: 20rem;">
+                  {{- collection.description -}}
+                </div>
+              {%- endif -%}
+            </div>
+          </div>
+
       <div class="CollectionMain">
         {%- if section.settings.toolbar_position == 'top' -%}
           {{- collection_toolbar -}}
@@ -403,6 +409,7 @@
         <div class="CollectionInner">
           {%- if show_filters and section.settings.filter_position == 'sidebar' -%}
             <div class="CollectionInner__Sidebar {% if collection_toolbar != blank and section.settings.toolbar_position == 'top' %}CollectionInner__Sidebar--withTopToolbar{% endif %} hidden-pocket">
+
               <div class="CollectionFilters">
                 {{ filters_content }}
 

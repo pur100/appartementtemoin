@@ -1,5 +1,4 @@
-<section class="Section {% unless section.settings.image %}Section--spacingNormal{% endunless %}{% if section.settings.desktop %}
-  desktop{% endif %}{% if section.settings.mobile %}mobile{% endif %}">
+<section class="Section {% unless section.settings.image %}Section--spacingNormal{% endunless %}">
   {%- capture section_content -%}
     <div class="FeatureText__ContentWrapper">
       <div class="FeatureText__Content">
@@ -20,15 +19,7 @@
             {%- endif -%}
 
             {%- if section.settings.link_text != blank -%}
-              <a {% if section.settings.mobile %}
-              style="    position: absolute;
-    z-index: 4;
-    font-size: 3.8rem;
-    /* bottom: 0px; */
-    margin-top: 8rem;
-    left: 12%;
-    color: white;"
-              {% endif %}href="{{ section.settings.link_url }}" class="Link Link--underline">{{ section.settings.link_text | escape }}</a>
+              <a href="{{ section.settings.link_url }}" class="Link Link--underline">{{ section.settings.link_text | escape }}</a>
             {%- endif -%}
           </header>
         {%- endif -%}
@@ -69,18 +60,6 @@
   "name": "Rich text with image",
   "class": "shopify-section--bordered",
   "settings": [
-    {
-      "type": "checkbox",
-      "label": "show on desktop",
-      "id": "desktop",
-      "default": true
-    },
-    {
-      "type": "checkbox",
-      "label": "show on mobile",
-      "id": "mobile",
-      "default": false
-    },
     {
       "type": "text",
       "id": "subheading",

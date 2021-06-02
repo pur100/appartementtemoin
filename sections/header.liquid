@@ -189,9 +189,6 @@ HEADER CONTENT
             <a href="/pages/a-propos" class="Heading Link Link--primary Text--subdued u-h8">à propos</a>
           </li>
 
-         <li class="HorizontalList__Item">
-            <a href="#" class="Heading Link Link--primary Text--subdued u-h8" data-action="toggle-search">fr/eng</a>
-          </li>
         </ul>
       </nav>
 
@@ -259,7 +256,12 @@ HEADER CONTENT
                     <div id="MegaMenuForColor" class="MegaMenu {% if push_image_count != 0 and link.links.size == 0 %}MegaMenu--spacingCenter{% elsif should_space_evenly %}MegaMenu--spacingEvenly{% endif %} {% if push_image_count == 0 and link.links.size > 4 %}MegaMenu--grid{% endif %}" aria-hidden="true" {{ block.shopify_attributes }}>
                       <div class="MegaMenu__Inner">
                         {%- for sub_link in link.links -%}
-                          <div class="MegaMenu__Item MegaMenu__Item--fit">
+                          <div class="MegaMenu__Item MegaMenu__Item--fit" style="position: relative;">
+                            {% if forloop.index0 == 0 %}
+                              <a href="https://appartementtemoin.myshopify.com/collections/cartes-cadeaux" class="MegaMenu__Title Heading Text--subdued" style="position: absolute; left:0; top:10rem;">CARTES CADEAUX</a>
+                              <a href="https://appartementtemoin.myshopify.com/collections/nouveautes" class="MegaMenu__Title Heading Text--subdued" style="position: absolute; left:0; top:6rem;">NOUVEAUTés</a>
+
+                            {% endif %}
                             <a href="{{ sub_link.url }}" class="MegaMenu__Title Heading Text--subdued u-h7">{{ sub_link.title | title }}</a>
 
                             {%- if sub_link.links != blank -%}
@@ -365,8 +367,10 @@ HEADER CONTENT
                 {%- endif -%}
               {%- endcapture -%}
 
+
+
               <li class="HorizontalList__Item {% if link.links == blank and link.active %}is-active{% endif %}" {% if menu_item_dropdown != blank %}aria-haspopup="true"{% endif %}>
-                <a href="{{ link.url }}" class="Heading u-h6">
+                <a id="{% if forloop.index0 == 0 %}first_link{% else %}other_link{% endif %}" href="{{ link.url }}" class="wholeBoutique Heading u-h6 ">
                   {{- link.title | escape -}}
                 </a>
 
@@ -434,7 +438,12 @@ HEADER CONTENT
             </li>
 
             <li class="HorizontalList__Item">
-              <a href="{{ routes.cart_url }}" class="Heading u-h6" {% unless template == 'cart' or settings.cart_type == 'page' %}data-action="open-drawer" data-drawer-id="sidebar-cart" aria-label="{{ 'header.navigation.open_cart' | t }}"{% endunless %}>{{ 'header.navigation.cart' | t }} <span class="Header__CartCount">{{ cart.item_count }}</span></a>
+              <a href="{{ routes.cart_url }}" class="Heading u-h6" {% unless template == 'cart' or settings.cart_type == 'page' %}data-action="open-drawer" data-drawer-id="sidebar-cart" aria-label="{{ 'header.navigation.open_cart' | t }}"{% endunless %}>{{ 'header.navigation.cart' | t }}
+
+                 <span id="cartCount" class="Header__CartCount {% if cart.item_count == 0 %}no_show{% endif %}">{{ cart.item_count }}</span></a>
+
+
+
             </li>
           </ul>
         </nav>
@@ -459,7 +468,8 @@ HEADER CONTENT
         <span class="hidden-phone">{%- render 'icon' with 'search-desktop' -%}</span>
       </a>
 
-     <a href="{{ routes.cart_url }}" class="Heading u-h6 hidden-desk" {% unless template == 'cart' or settings.cart_type == 'page' %}data-action="open-drawer" data-drawer-id="sidebar-cart" aria-label="{{ 'header.navigation.open_cart' | t }}"{% endunless %}><span class="Header__CartCount">{{ cart.item_count }}</span></a>
+     <a href="{{ routes.cart_url }}" class="Heading u-h6 hidden-desk" {% unless template == 'cart' or settings.cart_type == 'page' %}data-action="open-drawer" data-drawer-id="sidebar-cart" aria-label="{{ 'header.navigation.open_cart' | t }}"{% endunless %}>
+      <span class="Header__CartCount">{{ cart.item_count }}</span></a>
     </div>
   </div>
 
