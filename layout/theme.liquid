@@ -166,7 +166,6 @@
     {%- if settings.show_page_transition -%}
       <div class="PageTransition"></div>
     {%- endif -%}
-
     {% section 'popup' %}
     {% section 'sidebar-menu' %}
 
@@ -188,3 +187,13 @@
     </div>
   </body>
 </html>
+
+
+{% if template == 'index' %}
+  <style>
+    .wg-list.country-selector * {
+        color: #ffe000!important;
+    }
+  </style>
+{% endif %}
+

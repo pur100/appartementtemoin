@@ -39,6 +39,8 @@
     "cart_enable_notes": true,
     "cart_show_free_shipping_threshold": false,
     "cart_free_shipping_threshold": "50",
+    "social_facebook": "https:\/\/www.facebook.com\/appartementtemoin.fr",
+    "social_instagram": "https:\/\/www.instagram.com\/appartementtemoin\/",
     "favicon": "shopify:\/\/shop_images\/faviconOK.png",
     "checkout_logo_position": "center",
     "checkout_logo_size": "small",
@@ -155,7 +157,8 @@
           "dc393d37-b57f-4216-bded-d02ccb4bd9f6": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/appartement_temoin_header.jpg",
+              "image": "shopify:\/\/shop_images\/homepage-ordinateur-V2_9f6107de-329b-446a-82db-eef43f806315.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/Plan_de.jpg",
               "apply_overlay": true,
               "content_position": "bottomLeft",
               "subheading": "",
@@ -791,20 +794,20 @@
           "1618912973f5aa3d4d-0": {
             "type": "look",
             "settings": {
-              "image": "shopify:\/\/shop_images\/chapitre-10-fougeres.jpg",
+              "image": "shopify:\/\/shop_images\/appartement-temoin-chapitre-fougeres-objets-vintage_10713df3-cfb7-435d-9ba8-2171ffcc41f4.jpg",
               "dot_style": "light",
-              "product_1": "chaises-vintage-skai",
-              "product_1_horizontal_position": 68,
-              "product_1_vertical_position": 65,
-              "product_2": "lampe-vintage-opaline-jaune-annees-60",
+              "product_1": "",
+              "product_1_horizontal_position": 80,
+              "product_1_vertical_position": 52,
+              "product_2": "",
               "product_2_horizontal_position": 75,
               "product_2_vertical_position": 51,
               "product_3": "corbeille-vintage-osier-tresse",
-              "product_3_horizontal_position": 84,
-              "product_3_vertical_position": 67,
-              "product_4": "pots-a-crayons-vintage-deyhle",
-              "product_4_horizontal_position": 80,
-              "product_4_vertical_position": 50,
+              "product_3_horizontal_position": 83,
+              "product_3_vertical_position": 77,
+              "product_4": "table-vintage-verre-treteaux-triangulaires",
+              "product_4_horizontal_position": 60,
+              "product_4_vertical_position": 71,
               "product_5": "",
               "product_5_horizontal_position": 85,
               "product_5_vertical_position": 85
@@ -818,18 +821,40 @@
               "product_1": "lampe-de-bureau-vintage-rouge",
               "product_1_horizontal_position": 64,
               "product_1_vertical_position": 60,
-              "product_2": "",
-              "product_2_horizontal_position": 69,
-              "product_2_vertical_position": 36,
-              "product_3": "range-document-raymond-loewy",
-              "product_3_horizontal_position": 72,
-              "product_3_vertical_position": 51,
+              "product_2": "range-document-raymond-loewy",
+              "product_2_horizontal_position": 75,
+              "product_2_vertical_position": 60,
+              "product_3": "",
+              "product_3_horizontal_position": 74,
+              "product_3_vertical_position": 60,
               "product_4": "",
               "product_4_horizontal_position": 81,
               "product_4_vertical_position": 54,
               "product_5": "",
               "product_5_horizontal_position": 76,
               "product_5_vertical_position": 63
+            }
+          },
+          "4ae86923-8193-47e4-bde6-b8de07ea41b1": {
+            "type": "look",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/appartement-temoin-chapitre-fougeres-objets-vintage-vue-3_73f8d706-8609-47d2-bce8-5451beb8998f.jpg",
+              "dot_style": "light",
+              "product_1": "pichet-vintage-orange-pol-chambost",
+              "product_1_horizontal_position": 33,
+              "product_1_vertical_position": 67,
+              "product_2": "",
+              "product_2_horizontal_position": 50,
+              "product_2_vertical_position": 50,
+              "product_3": "",
+              "product_3_horizontal_position": 85,
+              "product_3_vertical_position": 85,
+              "product_4": "",
+              "product_4_horizontal_position": 85,
+              "product_4_vertical_position": 85,
+              "product_5": "",
+              "product_5_horizontal_position": 85,
+              "product_5_vertical_position": 85
             }
           },
           "65d92cc7-e01a-49bf-b94c-b33eae058c98": {
@@ -839,11 +864,11 @@
               "dot_style": "light",
               "product_1": "bougeoirs-anciens-roche-granite",
               "product_1_horizontal_position": 33,
-              "product_1_vertical_position": 55,
-              "product_2": "table-de-jeu-vintage-art-deco-annees-30",
-              "product_2_horizontal_position": 22,
-              "product_2_vertical_position": 77,
-              "product_3": "metallic-candlesticks",
+              "product_1_vertical_position": 70,
+              "product_2": "metallic-candlesticks",
+              "product_2_horizontal_position": 74,
+              "product_2_vertical_position": 51,
+              "product_3": "",
               "product_3_horizontal_position": 71,
               "product_3_vertical_position": 52,
               "product_4": "",
@@ -860,12 +885,12 @@
               "image": "shopify:\/\/shop_images\/appartement-temoin-chapitre-fougeres-objets-vintage-vue-4.jpg",
               "dot_style": "light",
               "product_1": "tables-basses-gigognes-vintage-plexiglas-brun-annees-70",
-              "product_1_horizontal_position": 30,
+              "product_1_horizontal_position": 41,
               "product_1_vertical_position": 63,
               "product_2": "bougeoirs-vintage-verre-transparent",
-              "product_2_horizontal_position": 65,
-              "product_2_vertical_position": 65,
-              "product_3": "lampe-vintage-cubique-albert-tormos",
+              "product_2_horizontal_position": 81,
+              "product_2_vertical_position": 74,
+              "product_3": "",
               "product_3_horizontal_position": 34,
               "product_3_vertical_position": 41,
               "product_4": "",
@@ -881,13 +906,13 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/appartement-temoin-chapitre-fougeres-objets-vintage-vue-5.jpg",
               "dot_style": "light",
-              "product_1": "tapise-vintage-laine-rouge-et-verte",
-              "product_1_horizontal_position": 23,
-              "product_1_vertical_position": 23,
+              "product_1": "grand-tapis-berbere-raye",
+              "product_1_horizontal_position": 30,
+              "product_1_vertical_position": 37,
               "product_2": "service-a-vaisselle-jaune-faiencerie-salins-france",
-              "product_2_horizontal_position": 63,
-              "product_2_vertical_position": 55,
-              "product_3": "grand-tapis-berbere-raye",
+              "product_2_horizontal_position": 71,
+              "product_2_vertical_position": 68,
+              "product_3": "",
               "product_3_horizontal_position": 28,
               "product_3_vertical_position": 49,
               "product_4": "",
@@ -904,15 +929,15 @@
               "image": "shopify:\/\/shop_images\/appartement-temoin-chapitre-fougeres-objets-vintage-vue-6.jpg",
               "dot_style": "light",
               "product_1": "lampe-de-bureau-vintage-gammalux-annees-70",
-              "product_1_horizontal_position": 30,
+              "product_1_horizontal_position": 28,
               "product_1_vertical_position": 61,
               "product_2": "",
               "product_2_horizontal_position": 49,
               "product_2_vertical_position": 54,
-              "product_3": "lampe-vintage-en-metal-chrome-eyeball",
+              "product_3": "",
               "product_3_horizontal_position": 72,
               "product_3_vertical_position": 53,
-              "product_4": "table-vintage-verre-treteaux-triangulaires",
+              "product_4": "",
               "product_4_horizontal_position": 61,
               "product_4_vertical_position": 71,
               "product_5": "",
@@ -926,8 +951,8 @@
               "image": "shopify:\/\/shop_images\/appartement-temoin-chapitre-fougeres-objets-vintage-vue-7.jpg",
               "dot_style": "light",
               "product_1": "assiettes-vintage-cordage-salins-france-annees-50",
-              "product_1_horizontal_position": 61,
-              "product_1_vertical_position": 50,
+              "product_1_horizontal_position": 70,
+              "product_1_vertical_position": 54,
               "product_2": "",
               "product_2_horizontal_position": 50,
               "product_2_vertical_position": 50,
@@ -947,9 +972,9 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/appartement-temoin-chapitre-fougeres-objets-vintage-vue-8.jpg",
               "dot_style": "light",
-              "product_1": "",
-              "product_1_horizontal_position": 79,
-              "product_1_vertical_position": 77,
+              "product_1": "service-a-vaiselle-vintage-nord-africain-rose",
+              "product_1_horizontal_position": 78,
+              "product_1_vertical_position": 66,
               "product_2": "",
               "product_2_horizontal_position": 71,
               "product_2_vertical_position": 18,
@@ -964,42 +989,20 @@
               "product_5_vertical_position": 85
             }
           },
-          "6e28ad80-4e2f-4fd1-982c-677c53070621": {
-            "type": "look",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/appartement-temoin-chapitre-fougeres-objets-vintage-vue-9.jpg",
-              "dot_style": "light",
-              "product_1": "suspension-vintage-verre-de-murano-coloree",
-              "product_1_horizontal_position": 34,
-              "product_1_vertical_position": 36,
-              "product_2": "vase-vintage-verre-trouble-inspiration-lanterne-chinoise",
-              "product_2_horizontal_position": 28,
-              "product_2_vertical_position": 53,
-              "product_3": "petite-lampe-space-age-vintage-socle-cubique",
-              "product_3_horizontal_position": 68,
-              "product_3_vertical_position": 58,
-              "product_4": "lampe-space-age-globe",
-              "product_4_horizontal_position": 74,
-              "product_4_vertical_position": 54,
-              "product_5": "lampe-vintage-space-age-socle-sculpte",
-              "product_5_horizontal_position": 66,
-              "product_5_vertical_position": 47
-            }
-          },
           "80aa499b-19e9-4a60-9ec7-42848f73341c": {
             "type": "look",
             "settings": {
               "image": "shopify:\/\/shop_images\/appartement-temoin-chapitre-fougeres-objets-vintage-vue-10.jpg",
               "dot_style": "light",
               "product_1": "lampe-medicis-vintage",
-              "product_1_horizontal_position": 73,
-              "product_1_vertical_position": 39,
-              "product_2": "banquette-vintage-vert-emeraude-annees-50",
-              "product_2_horizontal_position": 64,
-              "product_2_vertical_position": 24,
-              "product_3": "table-basse-vintage-moderniste-annees-60",
-              "product_3_horizontal_position": 67,
-              "product_3_vertical_position": 75,
+              "product_1_horizontal_position": 79,
+              "product_1_vertical_position": 42,
+              "product_2": "table-basse-vintage-moderniste-annees-60",
+              "product_2_horizontal_position": 81,
+              "product_2_vertical_position": 72,
+              "product_3": "",
+              "product_3_horizontal_position": 81,
+              "product_3_vertical_position": 72,
               "product_4": "",
               "product_4_horizontal_position": 85,
               "product_4_vertical_position": 85,
@@ -1013,12 +1016,12 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/appartement-temoin-chapitre-fougeres-objets-vintage-vue-12.jpg",
               "dot_style": "light",
-              "product_1": "",
-              "product_1_horizontal_position": 64,
-              "product_1_vertical_position": 33,
-              "product_2": "",
-              "product_2_horizontal_position": 81,
-              "product_2_vertical_position": 50,
+              "product_1": "pichet-vintage-jaune-faience-orchies-france",
+              "product_1_horizontal_position": 69,
+              "product_1_vertical_position": 36,
+              "product_2": "saladier-vintage-abstrait-la-borne-france",
+              "product_2_horizontal_position": 79,
+              "product_2_vertical_position": 52,
               "product_3": "",
               "product_3_horizontal_position": 85,
               "product_3_vertical_position": 85,
@@ -1056,13 +1059,13 @@
         "block_order": [
           "1618912973f5aa3d4d-0",
           "339b2139-d545-4434-a9c7-3f312861f4b0",
+          "4ae86923-8193-47e4-bde6-b8de07ea41b1",
           "65d92cc7-e01a-49bf-b94c-b33eae058c98",
           "708b33c4-a577-4021-abf8-6e46cd2ed658",
           "3fc8bc27-9a68-4e1c-899e-c143f871ec06",
           "fbc32091-e897-4039-8d40-d8add2fda018",
           "23367dc0-59eb-4784-a85b-e61a8f091569",
           "b89e609b-73be-4881-b99d-8973e98fe12f",
-          "6e28ad80-4e2f-4fd1-982c-677c53070621",
           "80aa499b-19e9-4a60-9ec7-42848f73341c",
           "5b1cc086-56ba-40b5-aedf-713d238403ee",
           "754a7dd7-f27b-4527-abcb-4dd5b2af5d7b"
@@ -1073,7 +1076,7 @@
           "show_mobile_product_info": false,
           "product_color": "#000000",
           "text_block_title": "Fougères",
-          "text_block_content": "Chapitre 10 \/ Juin 2021 \nphotographie : Romain Dumas\nillustration : Stéphanie Viot\nset design : Maxime Chaiblaine"
+          "text_block_content": "chapitre 10 — Juin 2021\nphotographie : Romain Dumas\nset design : Maxime Chaiblaine"
         }
       },
       "image-with-text-block-a-propos": {
@@ -1081,9 +1084,9 @@
         "settings": {
           "subheading": "",
           "title": "à propos",
-          "image": "shopify:\/\/shop_images\/AT-chaper-2.jpg",
+          "image": "shopify:\/\/shop_images\/a-propos-site_44a359df-7f34-4e94-a413-0786543bccc7.jpg",
           "image_position": "right",
-          "content": "<p><strong>C’est dans les années 1960\/1970 que se développe le concept d’appartements témoins, des reconstitutions à l&#x27;identique de logements pour y être témoin de l’aménagement intérieur - mobilier et objets du quotidien – élaboré à cette époque. À l’image de ces premiers appartements témoins, la marque de décoration Appartement Témoin se veut témoin du passé, témoin de cette époque ayant révolutionnée le confort moderne, où il était nécessaire d’aménager l’espace pour que celui-ci soit pratique et moderne.<\/strong><\/p><p><strong>Dans un monde où règne l’uniformité, nous pensons qu’il est nécessaire d’agencer un espace pour lui donner une âme, et ainsi faire le choix d’un design responsable, authentique et unique. Appartement Témoin symbolise ce doux mélange entre l’idéal d’une époque révolue, et les valeurs de notre époque actuelle. <\/strong><\/p><p><strong>Aujourd&#x27;hui, Appartement Témoin c’est une marque de décoration qui propose une sélection d’objets uniques, choisis avec soin pour leur singularité. C’est une nouvelle façon de concevoir et d’aménager son intérieur : nous sommes convaincue qu’il est nécessaire de recycler, de décorer avec de la « récup » et de valoriser l’artisanat. Chaque objet est chiné ou conçu avec soin, nettoyé et restauré. <\/strong><\/p><p><strong>Appartement Témoin c’est aussi privilégier l’imaginaire, laisser notre clientèle s’approprier nos objets à travers nos mises en scène, conçues pour laisser l’esprit vagabonder. Chaque objet a une histoire que nous tentons de reconstituer ou d’inventer. Nos clients mais aussi, les professionnels que nous accompagnons en France et à l’étranger : AESOP, Sézane, Pierre Yovanovitch, Rose Uniacke... l&#x27;ont bien compris. <\/strong><\/p>",
+          "content": "<p>Appartement Témoin est une marque de décoration mêlant sélections vintage et créations exclusives.<br\/><\/p><p>Appartement Témoin vous propose des objets anciens de différentes époques, sélectionnés pour leurs styles singuliers, allant du designer célèbre à l'auteur méconnu. <br\/>Appartement Témoin, c’est aussi un état d’esprit : en associant des meubles et objets chinés à des créations à partir de matériaux recyclés, nous invitons à une nouvelle manière de rêver son intérieur autour de l’unique, de l’insolite, mais aussi de l’imparfait.<\/p><p>Chaque nouvelle collection est une nouvelle histoire. Au fil des CHAPITRES, découvrez de nouvelles sélections d’objets et de mobilier mis en scène et en imaginaire. <\/p><p>Pour tout renseignement, contactez-nous par mail à boutique@appartementtemoin.com.<\/p>",
           "link_text": ""
         }
       },
@@ -1135,61 +1138,171 @@
           "page-faq-template-0": {
             "type": "separator",
             "settings": {
-              "title": "Shipping"
+              "title": "Mon compte"
             }
           },
           "page-faq-template-1": {
             "type": "question",
             "settings": {
-              "title": "Do you ship overseas?",
-              "answer": "<p>Yes, we ship all over the world. Shipping costs will apply, and will be added at checkout. We run discounts and promotions all year, so stay tuned for exclusive deals.<\/p>"
+              "title": "Comment accéder à mon compte ?",
+              "answer": "<p>Vous pouvez vous connecter à votre compte via la <a href=\"https:\/\/appartementtemoin.myshopify.com\/account\/login\" target=\"_blank\" title=\"https:\/\/appartementtemoin.myshopify.com\/account\/login\">page compte<\/a>. Vous devrez indiquer votre email et votre mot de passe. Dans le cas où vous auriez oublié votre mot de passe, vous pouvez cocher la case \"mot de passe oublié\" et vous recevrez dans les minutes qui suivent un email vous permettant de définir un nouveau mot de passe.<\/p>"
             }
           },
           "page-faq-template-2": {
             "type": "question",
             "settings": {
-              "title": "How long will it take to get my order?",
-              "answer": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.<\/p>"
-            }
-          },
-          "page-faq-template-3": {
-            "type": "question",
-            "settings": {
-              "title": "What shipping carriers do you use?",
-              "answer": "<p>We use all major carriers, and local courier partners. You’ll be asked to select a delivery method during checkout.<\/p>"
+              "title": "Comment voir mes commandes ? Comment modifier mes données personnelles ?",
+              "answer": "<p>Vous pouvez accéder à vos commandes et modifier vos données en vous connectant à votre espace personnel dans la rubrique « compte ».<\/p>"
             }
           },
           "page-faq-template-4": {
             "type": "separator",
             "settings": {
-              "title": "Product"
+              "title": "Mes commandes"
             }
           },
           "page-faq-template-5": {
             "type": "question",
             "settings": {
-              "title": "Can I return my product?",
-              "answer": "<p>We always aim for make sure our customers love our products, but if you do need to return an order, we’re happy to help. Just email us directly and we’ll take you through the process.<\/p>"
+              "title": "Quels sont les moyens de paiement proposés par Appartement Témoin ?",
+              "answer": "<p>Vous pouvez régler sur notre eshop par carte bancaire (Visa, Mastercard, American express et ApplePay) via le système sécurisé Stripe, ainsi que par Paypal Checkout. <\/p>"
             }
           },
           "page-faq-template-6": {
             "type": "question",
             "settings": {
-              "title": "Can I get my product personalized?",
-              "answer": "<p>It depends on the creator and the product. All options are outlined on the product page, so look out for customization options there.<\/p>"
+              "title": "Comment savoir si ma commande est validée ?",
+              "answer": "<p>Vous recevrez un email de confirmation à l’adresse email que vous avez indiqué lors de votre commande. <\/p>"
+            }
+          },
+          "2ef626b3-5ad5-428c-869f-c02d4eea1cd9": {
+            "type": "question",
+            "settings": {
+              "title": "J’ai besoin d’une facture où figure la tva ?",
+              "answer": "<p>Contactez-nous à boutique@appartementtemoin.com. N’oubliez pas de nous indiquer toutes les informations que vous souhaitez voir figurer sur la facture (n°TVA, adresse…)<\/p>"
             }
           },
           "page-faq-template-7": {
             "type": "separator",
             "settings": {
-              "title": "Other"
+              "title": "Livraison & suivi de commande"
             }
           },
-          "page-faq-template-8": {
+          "8774a1a9-b589-4915-9b6b-b1633a20038a": {
             "type": "question",
             "settings": {
-              "title": "Any question?",
-              "answer": "<p>You can contact us through our contact page! We will be happy to assist you.<\/p>"
+              "title": "Si je commande plusieurs produits, les frais de port sont-ils calculés automatiquement ?",
+              "answer": "<p>Oui, le poids total de la commande est calculé et nous vous proposons des solutions d’expédition en conséquence.<\/p>"
+            }
+          },
+          "ac947fc1-c0ae-4b12-aad8-fc0ee234108a": {
+            "type": "question",
+            "settings": {
+              "title": "Puis-je modifier l’adresse de livraison de ma commande ?",
+              "answer": "<p>Oui, si vous nous contactez avant la préparation de votre commande à boutique@appartementtemoin.com nous effectuerons les modifications.<\/p>"
+            }
+          },
+          "886890ca-7019-4f47-80ca-ec35b49be701": {
+            "type": "question",
+            "settings": {
+              "title": "Puis-je venir récupérer mes produits chez vous ? Où êtes-vous situés ?",
+              "answer": "<p>Oui, nous pouvons convenir d’un rendez-vous pour que vous puissiez récupérer votre commande dans notre atelier à Antony (92, France). Contactez-nous à boutique@appartementtemoin.com ou bien au moment de passer commande à l’étape “Livraison” vous aurez l’option gratuite “Récupérer”.<\/p>"
+            }
+          },
+          "71d8d870-b846-4f3b-9662-8223abb04509": {
+            "type": "question",
+            "settings": {
+              "title": "J’ai commandé du mobilier lourd, comment se passe la livraison ?",
+              "answer": "<p>Si vous êtes à Paris ou proche banlieue, lors de votre passage à la caisse vous pourrez sélectionner la livraison locale ou bien le pick-up dans notre atelier à Antony (92)<\/p><p>Si lors du passage à la caisse vous ne pouvez choisir aucun mode de livraison, contactez-nous par email à boutique@appartementtemoin.com et nous vous proposerons un devis pour une livraison avec nos prestataires de confiance, spécialisés dans le transport d'objets lourds. <\/p><p>Voir nos <a href=\"\/pages\/livraisons\" target=\"_blank\" title=\"Livraisons\">conditions de livraison<\/a><\/p>"
+            }
+          },
+          "cd48796e-fa84-4054-a30f-0692ee942a5c": {
+            "type": "question",
+            "settings": {
+              "title": "Comment suivre ma commande ?",
+              "answer": "<p>Nous vous invitons à consulter votre boîte mail, toutes les informations son dans l’email de confirmation que vous avez reçu de la part de boutique@appartementtemoin.com  ou vous pouvez vous connecter à votre espace client.<\/p>"
+            }
+          },
+          "698b406e-bedc-4fbd-849c-5ec10dd564e5": {
+            "type": "question",
+            "settings": {
+              "title": "Quels sont les délais de livraison ?",
+              "answer": "<p>Toutes les commandes sont préparées depuis notre atelier à Antony (92, France). La préparation des commandes est faite sous 72h (selon le volume des  objets commandés et le soin apporté à l’emballage et la protection). Dans le cas où le délai serait rallongé, nous vous contacterons via l’email que vous avez renseigné lors de votre commande. Pour plus d’informations, rendez-vous sur notre <a href=\"\/pages\/livraisons\" title=\"Livraisons\">page Livraisons<\/a>. <\/p>"
+            }
+          },
+          "74911a1a-5c4e-4368-8498-28115d0f55f2": {
+            "type": "question",
+            "settings": {
+              "title": "Comment sont emballés les produits  ?",
+              "answer": "<p>Nos objets sont uniques et irremplaçables, c’est pourquoi nous avons choisi des transporteurs spécialisés pour nos envois. Nous protégeons nos envois avec le plus grand soin. <\/p>"
+            }
+          },
+          "2bd96209-0841-42e3-b3eb-876a5791bb04": {
+            "type": "question",
+            "settings": {
+              "title": "Que faire si un produit arrive endommagé ?",
+              "answer": "<p>Contactez-nous par email à boutique@appartementtemoin.com en nous envoyant des photos des objets objets cassés ou endommagés. Notre service client vous indiquera la marche à suivre et les options qui sont à votre disposition. <\/p>"
+            }
+          },
+          "f655b5d3-c1db-4301-9cfe-7674cd82e4a9": {
+            "type": "separator",
+            "settings": {
+              "title": "Produits"
+            }
+          },
+          "d826f254-d628-4a97-83fd-643e11974050": {
+            "type": "question",
+            "settings": {
+              "title": "Vintage \/ antiquités ?",
+              "answer": "<p>Un produit vintage est un produit ancien ou de seconde main. Chez Appartement Témoin, nous sélectionnons des pièces d'antiquités mais aussi des objets vintage d’après guerre. Nous précisons sur nos fiches produits la catégorie et l’époque. Nous proposons également des pièces plus récentes et contemporaines “à collectionner”. <\/p>"
+            }
+          },
+          "63c63b64-752b-49fd-9271-a85456e82743": {
+            "type": "question",
+            "settings": {
+              "title": "Upcycling ?",
+              "answer": "<p>“Rien ne se perd, rien ne se crée, tout se transforme !” L’upcycling est un terme désignant l’action de récupérer des matériaux ou des produits dont on a plus l’usage afin de les revaloriser.<\/p>"
+            }
+          },
+          "8bf3aaf9-b143-4011-a872-2938b963bb54": {
+            "type": "question",
+            "settings": {
+              "title": "L’objet que j’ai reçu a déjà été utilisé et comporte des marques d’usure ?",
+              "answer": "<p>Nos articles sont vendus en l’état. Certains sont anciens, portent des traces d’usage, des rayures et des défauts dus à leur âge. Nous attachons notre attention à leur bon état de conservation et à leur bon fonctionnement. Nous nous efforçons de signaler précisément leur état dans le descriptif des objets. Avant de confirmer votre achat, nous sommes à votre disposition pour vous fournir tout complément d’information sur simple demande par mail à boutique@appartementtemoin.com. <\/p>"
+            }
+          },
+          "7615b525-9943-4cb4-baed-b02e92c3c907": {
+            "type": "question",
+            "settings": {
+              "title": "Vos objets sont-ils en état de fonctionnement et propres ?",
+              "answer": "<p>Oui, nous accordons une attention particulière à la restauration de nos objets. Par exemple, la vaisselle Appartement Témoin est vérifiée et nettoyée. Les luminaires sont vérifiés et remis aux normes. Nous prenons soin de nos objets afin que vous puissiez les utiliser directement et les installer chez vous.<\/p>"
+            }
+          },
+          "8bb37465-05d8-4ce5-b24e-d99cf68b1fdf": {
+            "type": "question",
+            "settings": {
+              "title": "Je souhaite commander à nouveau un produit acheté chez vous mais je ne le trouve plus sur le site ?",
+              "answer": "<p>Nous proposons sur Appartement Témoin une sélection de produits Vintage et des Antiquités. Nos produits sont souvent rares, voire uniques et nous ne pouvons vous garantir que nous trouverons à nouveau le même produit. Lorsque plusieurs lots sont disponibles, vous pourrez sélectionner la quantité que vous souhaitez acheter dans votre panier. <\/p>"
+            }
+          },
+          "4f818a04-672b-4102-b1bc-cf1050e81126": {
+            "type": "separator",
+            "settings": {
+              "title": "Retours & remboursements"
+            }
+          },
+          "9e51b453-2325-4d2e-99e9-e0a10b273cd7": {
+            "type": "question",
+            "settings": {
+              "title": "Comment procéder à un retour ?",
+              "answer": "<p>Vous disposez d’un délai de 7 jours pour prendre contact avec nous par email à boutique@appartementtemoin.com pour organiser le retour de votre commande. Les frais liés à ce retour sont à la charge de l’acheteur.<br\/>L’acheteur à la responsabilité de l’emballage des produits retournés. Nous accordons toute notre attention pour que les produits arrivent dans le meilleur état. <\/p>"
+            }
+          },
+          "57625ee5-fab6-4376-a956-45a2fc9db7d6": {
+            "type": "question",
+            "settings": {
+              "title": "Comment se passe le remboursement ?",
+              "answer": "<p>Une fois la vérification du produit retourné, nous procédons à votre remboursement soit en recréditant votre compte, soit par virement le cas échéant.<\/p><p>Consultez notre page <a href=\"\/policies\/refund-policy\" title=\"Refund Policy\">conditions d'utilisation<\/a><\/p>"
             }
           }
         },
@@ -1197,92 +1310,306 @@
           "page-faq-template-0",
           "page-faq-template-1",
           "page-faq-template-2",
-          "page-faq-template-3",
           "page-faq-template-4",
           "page-faq-template-5",
           "page-faq-template-6",
+          "2ef626b3-5ad5-428c-869f-c02d4eea1cd9",
           "page-faq-template-7",
-          "page-faq-template-8"
+          "8774a1a9-b589-4915-9b6b-b1633a20038a",
+          "ac947fc1-c0ae-4b12-aad8-fc0ee234108a",
+          "886890ca-7019-4f47-80ca-ec35b49be701",
+          "71d8d870-b846-4f3b-9662-8223abb04509",
+          "cd48796e-fa84-4054-a30f-0692ee942a5c",
+          "698b406e-bedc-4fbd-849c-5ec10dd564e5",
+          "74911a1a-5c4e-4368-8498-28115d0f55f2",
+          "2bd96209-0841-42e3-b3eb-876a5791bb04",
+          "f655b5d3-c1db-4301-9cfe-7674cd82e4a9",
+          "d826f254-d628-4a97-83fd-643e11974050",
+          "63c63b64-752b-49fd-9271-a85456e82743",
+          "8bf3aaf9-b143-4011-a872-2938b963bb54",
+          "7615b525-9943-4cb4-baed-b02e92c3c907",
+          "8bb37465-05d8-4ce5-b24e-d99cf68b1fdf",
+          "4f818a04-672b-4102-b1bc-cf1050e81126",
+          "9e51b453-2325-4d2e-99e9-e0a10b273cd7",
+          "57625ee5-fab6-4376-a956-45a2fc9db7d6"
         ],
         "settings": {}
       },
       "pages_list_chapitres": {
         "type": "pages_list_chapitres",
         "blocks": {
-          "5ebbd562-091f-49a9-a092-5a1174b3846c": {
+          "e5ca230a-3e0c-49e9-84d6-49cfcc4e2c39": {
             "type": "chapitre",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Appartement_Temoin_-_chapitre_cite_imperiale.jpg",
-              "content": "<p>Cité impériale<\/p>",
+              "image": "shopify:\/\/shop_images\/14.jpg",
+              "content": "",
+              "link_url": "shopify:\/\/collections\/all",
+              "margin_top": 3,
+              "margin_bottom": 0
+            }
+          },
+          "724991cc-f4d0-4d75-8ee1-22f31200176c": {
+            "type": "chapitre",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/11.jpg",
+              "content": "",
               "link_url": "shopify:\/\/collections\/cite-imperiale",
-              "margin_top": 20,
-              "margin_bottom": 17
-            }
-          },
-          "0a018d44-9492-4a63-aa17-4b27e8bf4c67": {
-            "type": "chapitre",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Appartement_temoin_-_Chapitre_catalogue.jpg",
-              "content": "<p>Catalogue<\/p>",
-              "link_url": "shopify:\/\/collections\/catalogue",
-              "margin_top": 0,
-              "margin_bottom": 7
-            }
-          },
-          "9d3408de-7f7a-453d-b1bf-f498e2110168": {
-            "type": "chapitre",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Appartement_Temoin_-_une_chambre_a_soi.jpg",
-              "content": "<p>A room of one's own<\/p>",
-              "link_url": "shopify:\/\/collections\/a-room-of-ones-own",
-              "margin_top": 9,
+              "margin_top": 3,
               "margin_bottom": 0
             }
           },
-          "2cb54754-ec46-43df-a2bb-d4356dd149be": {
+          "75284d52-8187-4d6c-b10c-a25e2c4adb65": {
             "type": "chapitre",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Appartement_Temoin_-_Chapitre_Sudoku_and_the_mooons.jpg",
-              "content": "<p>Sudoku & the mooons<\/p>",
+              "image": "shopify:\/\/shop_images\/19.jpg",
+              "content": "",
               "link_url": "shopify:\/\/collections\/sudoku-the-mooons",
-              "margin_top": 22,
-              "margin_bottom": 15
-            }
-          },
-          "8287c288-ecaa-4f81-8d13-d7df0888c413": {
-            "type": "chapitre",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Appartement_Temoin_-_Chapitre_plantes_d_interieur.jpg",
-              "content": "<p>Plantes d'intérieur<\/p>",
-              "link_url": "shopify:\/\/collections\/plantes-dinterieur",
-              "margin_top": 19,
+              "margin_top": 3,
               "margin_bottom": 0
             }
           },
-          "cdf227b7-0729-4d81-87b2-433c663d8bb5": {
+          "78ce9bc4-f6a5-4056-ad38-05bed79a18cc": {
             "type": "chapitre",
             "settings": {
-              "image": "shopify:\/\/shop_images\/NouvelHairPhotosSPORTY.jpg",
-              "content": "<p>Nouvel'Hair<\/p>",
+              "image": "shopify:\/\/shop_images\/23.jpg",
+              "content": "",
+              "link_url": "shopify:\/\/collections\/fougeres",
+              "margin_top": 3,
+              "margin_bottom": 0
+            }
+          },
+          "829daf28-c236-4d4f-9303-da54ecd53554": {
+            "type": "chapitre",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/3.jpg",
+              "content": "",
+              "link_url": "shopify:\/\/collections\/plantes-dinterieur",
+              "margin_top": 3,
+              "margin_bottom": 0
+            }
+          },
+          "c6fae828-64d2-4e8c-bea3-e56447c106a6": {
+            "type": "chapitre",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/4.jpg",
+              "content": "",
+              "link_url": "shopify:\/\/collections\/all",
+              "margin_top": 3,
+              "margin_bottom": 0
+            }
+          },
+          "9e275b43-cb77-4463-ba73-c86b73902e88": {
+            "type": "chapitre",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/22.jpg",
+              "content": "",
+              "link_url": "shopify:\/\/collections\/plantes-dinterieur",
+              "margin_top": 3,
+              "margin_bottom": 0
+            }
+          },
+          "0efaa483-fdb5-4202-9fe1-487b5473bbb4": {
+            "type": "chapitre",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/8.jpg",
+              "content": "",
+              "link_url": "shopify:\/\/collections\/cuisine-dada",
+              "margin_top": 3,
+              "margin_bottom": 0
+            }
+          },
+          "3571bd00-d2fa-44dc-97f0-35482d8d35d8": {
+            "type": "chapitre",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/16.jpg",
+              "content": "",
+              "link_url": "shopify:\/\/collections\/the-big-blue",
+              "margin_top": 3,
+              "margin_bottom": 0
+            }
+          },
+          "a36fa4a1-9239-40b4-92ee-72bc0b1e82c5": {
+            "type": "chapitre",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/20.jpg",
+              "content": "",
+              "link_url": "shopify:\/\/collections\/the-big-blue",
+              "margin_top": 3,
+              "margin_bottom": 0
+            }
+          },
+          "e0a81614-3f1d-43d2-96c5-cc89629903c4": {
+            "type": "chapitre",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/15.jpg",
+              "content": "",
+              "link_url": "shopify:\/\/collections\/plantes-dinterieur",
+              "margin_top": 3,
+              "margin_bottom": 0
+            }
+          },
+          "d793dc4c-bc24-46f7-a8cf-ae16944c3bdc": {
+            "type": "chapitre",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/17.jpg",
+              "content": "",
+              "link_url": "shopify:\/\/collections\/cuisine-dada",
+              "margin_top": 3,
+              "margin_bottom": 0
+            }
+          },
+          "2250b038-3a9d-4126-b1ee-cd4f55e6255d": {
+            "type": "chapitre",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/24.jpg",
+              "content": "",
+              "link_url": "shopify:\/\/collections\/fougeres",
+              "margin_top": 3,
+              "margin_bottom": 0
+            }
+          },
+          "833c081e-1a4a-41a2-bcae-30fc592f45a2": {
+            "type": "chapitre",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/2.jpg",
+              "content": "",
+              "link_url": "shopify:\/\/collections\/the-big-blue",
+              "margin_top": 3,
+              "margin_bottom": 0
+            }
+          },
+          "d6c56453-05bc-494a-9e8a-fc063182c087": {
+            "type": "chapitre",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/18.jpg",
+              "content": "",
+              "link_url": "shopify:\/\/collections\/catalogue",
+              "margin_top": 3,
+              "margin_bottom": 0
+            }
+          },
+          "99417cb6-3eb1-4231-9b84-4339b6191627": {
+            "type": "chapitre",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/9.jpg",
+              "content": "",
+              "link_url": "shopify:\/\/collections\/cuisine-dada",
+              "margin_top": 3,
+              "margin_bottom": 0
+            }
+          },
+          "0a62e6fa-2e93-451c-974c-0cbfaf08a4a2": {
+            "type": "chapitre",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/1.jpg",
+              "content": "",
+              "link_url": "shopify:\/\/collections\/a-room-of-ones-own",
+              "margin_top": 3,
+              "margin_bottom": 0
+            }
+          },
+          "ef136a16-f185-46d9-91d4-013f691cf2f4": {
+            "type": "chapitre",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/7.jpg",
+              "content": "",
+              "link_url": "shopify:\/\/collections\/cuisine-dada",
+              "margin_top": 3,
+              "margin_bottom": 0
+            }
+          },
+          "6a6eeb0d-6abd-443c-93aa-427bd61a3bf8": {
+            "type": "chapitre",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/10.jpg",
+              "content": "",
+              "link_url": "shopify:\/\/collections\/the-big-blue",
+              "margin_top": 3,
+              "margin_bottom": 0
+            }
+          },
+          "25803b06-88d8-4c1c-b17d-151dff5e6568": {
+            "type": "chapitre",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/6.jpg",
+              "content": "",
+              "link_url": "shopify:\/\/collections\/sudoku-the-mooons",
+              "margin_top": 3,
+              "margin_bottom": 0
+            }
+          },
+          "966f3df9-0696-45b3-9d54-646bcd976f4a": {
+            "type": "chapitre",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/21.jpg",
+              "content": "",
+              "link_url": "shopify:\/\/collections\/a-room-of-ones-own",
+              "margin_top": 3,
+              "margin_bottom": 0
+            }
+          },
+          "4f8347d2-1183-4b71-bbd6-818ee82dcf2c": {
+            "type": "chapitre",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/13.jpg",
+              "content": "",
               "link_url": "shopify:\/\/collections\/nouvelhair",
-              "margin_top": 0,
-              "margin_bottom": 23
+              "margin_top": 3,
+              "margin_bottom": 0
+            }
+          },
+          "c53f383b-81b7-4888-a95c-efda70d296e2": {
+            "type": "chapitre",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/5.jpg",
+              "content": "",
+              "link_url": "shopify:\/\/collections\/cite-imperiale",
+              "margin_top": 3,
+              "margin_bottom": 0
+            }
+          },
+          "6adef86c-f1a8-4da3-af1b-8b062708dcd0": {
+            "type": "chapitre",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/12.jpg",
+              "content": "",
+              "link_url": "shopify:\/\/collections\/a-room-of-ones-own",
+              "margin_top": 3,
+              "margin_bottom": 0
             }
           }
         },
         "block_order": [
-          "5ebbd562-091f-49a9-a092-5a1174b3846c",
-          "0a018d44-9492-4a63-aa17-4b27e8bf4c67",
-          "9d3408de-7f7a-453d-b1bf-f498e2110168",
-          "2cb54754-ec46-43df-a2bb-d4356dd149be",
-          "8287c288-ecaa-4f81-8d13-d7df0888c413",
-          "cdf227b7-0729-4d81-87b2-433c663d8bb5"
+          "e5ca230a-3e0c-49e9-84d6-49cfcc4e2c39",
+          "724991cc-f4d0-4d75-8ee1-22f31200176c",
+          "75284d52-8187-4d6c-b10c-a25e2c4adb65",
+          "78ce9bc4-f6a5-4056-ad38-05bed79a18cc",
+          "829daf28-c236-4d4f-9303-da54ecd53554",
+          "c6fae828-64d2-4e8c-bea3-e56447c106a6",
+          "9e275b43-cb77-4463-ba73-c86b73902e88",
+          "0efaa483-fdb5-4202-9fe1-487b5473bbb4",
+          "3571bd00-d2fa-44dc-97f0-35482d8d35d8",
+          "a36fa4a1-9239-40b4-92ee-72bc0b1e82c5",
+          "e0a81614-3f1d-43d2-96c5-cc89629903c4",
+          "d793dc4c-bc24-46f7-a8cf-ae16944c3bdc",
+          "2250b038-3a9d-4126-b1ee-cd4f55e6255d",
+          "833c081e-1a4a-41a2-bcae-30fc592f45a2",
+          "d6c56453-05bc-494a-9e8a-fc063182c087",
+          "99417cb6-3eb1-4231-9b84-4339b6191627",
+          "0a62e6fa-2e93-451c-974c-0cbfaf08a4a2",
+          "ef136a16-f185-46d9-91d4-013f691cf2f4",
+          "6a6eeb0d-6abd-443c-93aa-427bd61a3bf8",
+          "25803b06-88d8-4c1c-b17d-151dff5e6568",
+          "966f3df9-0696-45b3-9d54-646bcd976f4a",
+          "4f8347d2-1183-4b71-bbd6-818ee82dcf2c",
+          "c53f383b-81b7-4888-a95c-efda70d296e2",
+          "6adef86c-f1a8-4da3-af1b-8b062708dcd0"
         ],
         "settings": {
-          "subheading": "<p>Nous inventons des histoires grâce à des mises en espace et évènements. Chaque histoire est présentée sous forme de CHAPITRE avec une collection d’objets vintage associée.<\/p>",
-          "title": "CHAPITRES",
+          "subheading": "<p>Nous inventons des histoires grâce à des mises en espace et évènements. Chaque histoire est présentée sous forme de CHAPITRE avec une collection d’objets associés. Ci-dessous, nos archives des chapitres précédents.<\/p>",
+          "title": "CHAPITRE",
           "image_position": "right",
-          "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
+          "content": "",
           "link_text": ""
         }
       },
@@ -1313,12 +1640,13 @@
           "16221269157fe6da24-0": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Appartement_Temoin_-_Chapitre_plantes_d_interieur.jpg",
-              "apply_overlay": true,
+              "image": "shopify:\/\/shop_images\/appartement-temoin-chapitre-fougeres-objets-vintage-mobile.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/appartement-temoin-chapitre-fougeres-objets-vintage-mobile_590da250-b2d8-4cfc-9507-2029e4dbc733.jpg",
+              "apply_overlay": false,
               "content_position": "bottomCenter",
               "subheading": "",
               "title": "",
-              "button_1_text": "voir le chapitre",
+              "button_1_text": "voir la collection",
               "button_1_link": "shopify:\/\/collections\/fougeres",
               "button_2_text": ""
             }
@@ -1326,12 +1654,41 @@
           "16221269157fe6da24-1": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Appartement_Temoin_-_Chapitre_Sudoku_and_the_mooons.jpg",
-              "apply_overlay": true,
+              "image": "shopify:\/\/shop_images\/appartement-temoin-chapitre-fougeres-objets-vintage-mobile-vue-2.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/appartement-temoin-chapitre-fougeres-objets-vintage-mobile-vue-2_48a59c62-87e8-41b9-93f9-c68f4685aa3c.jpg",
+              "apply_overlay": false,
               "content_position": "bottomCenter",
               "subheading": "",
               "title": "",
-              "button_1_text": "voir le chapitre",
+              "button_1_text": "voir la collection",
+              "button_1_link": "shopify:\/\/collections\/fougeres",
+              "button_2_text": ""
+            }
+          },
+          "02379aca-0177-4711-ac0b-9f51ef52fd0c": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/appartement-temoin-chapitre-fougeres-objets-vintage-mobile-vue-3.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/appartement-temoin-chapitre-fougeres-objets-vintage-mobile-vue-3_11075a3d-e7d2-4291-9e1d-c2975c37053d.jpg",
+              "apply_overlay": false,
+              "content_position": "bottomCenter",
+              "subheading": "",
+              "title": "",
+              "button_1_text": "voir la collection",
+              "button_1_link": "shopify:\/\/collections\/fougeres",
+              "button_2_text": ""
+            }
+          },
+          "ffa6522a-e71c-4aef-a457-a0382ac68e4e": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/appartement-temoin-chapitre-fougeres-objets-vintage-mobile-vue-4.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/appartement-temoin-chapitre-fougeres-objets-vintage-mobile-vue-4_7b6f1ffd-7ea1-4403-839a-2e5aa2cdaa7e.jpg",
+              "apply_overlay": false,
+              "content_position": "bottomCenter",
+              "subheading": "",
+              "title": "",
+              "button_1_text": "voir la collection",
               "button_1_link": "shopify:\/\/collections\/fougeres",
               "button_2_text": ""
             }
@@ -1339,13 +1696,15 @@
         },
         "block_order": [
           "16221269157fe6da24-0",
-          "16221269157fe6da24-1"
+          "16221269157fe6da24-1",
+          "02379aca-0177-4711-ac0b-9f51ef52fd0c",
+          "ffa6522a-e71c-4aef-a457-a0382ac68e4e"
         ],
         "settings": {
           "show_fullscreen": false,
           "show_arrow": false,
           "autoplay": true,
-          "cycle_speed": 5,
+          "cycle_speed": 3,
           "text_color": "#ffffff",
           "button_color": "#363636",
           "button_background": "#ffffff"
