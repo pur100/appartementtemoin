@@ -27,6 +27,7 @@
     "text_font": "futura_n4",
     "base_text_font_size": 14,
     "show_page_transition": false,
+    "show_button_transition": false,
     "show_image_zooming": false,
     "search_mode": "product",
     "product_show_price_on_hover": false,
@@ -42,8 +43,9 @@
     "social_facebook": "https:\/\/www.facebook.com\/appartementtemoin.fr",
     "social_instagram": "https:\/\/www.instagram.com\/appartementtemoin\/",
     "favicon": "shopify:\/\/shop_images\/faviconOK.png",
+    "checkout_logo_image": "shopify:\/\/shop_images\/logo_banniere_1000px.png",
     "checkout_logo_position": "center",
-    "checkout_logo_size": "small",
+    "checkout_logo_size": "large",
     "checkout_body_background_color": "#ffffff",
     "checkout_input_background_color_mode": "white",
     "checkout_sidebar_background_color": "#efefef",
@@ -65,7 +67,8 @@
           "home_page_only": false,
           "background": "#000000",
           "text_color": "#ffffff",
-          "content": "Announce something here"
+          "content": "Announce something here",
+          "link": ""
         }
       },
       "header": {
@@ -100,7 +103,7 @@
           "enable_transparent_header": true,
           "enable_transparent_header_collection": true,
           "show_transparent_header_border": false,
-          "transparent_text_color": "#ffe000"
+          "transparent_text_color": "#f9c5b8"
         }
       },
       "footer": {
@@ -157,14 +160,16 @@
           "dc393d37-b57f-4216-bded-d02ccb4bd9f6": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/homepage-ordinateur-V2_9f6107de-329b-446a-82db-eef43f806315.jpg",
-              "mobile_image": "shopify:\/\/shop_images\/Plan_de.jpg",
-              "apply_overlay": true,
+              "image": "shopify:\/\/shop_images\/28.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/26.jpg",
+              "apply_overlay": false,
               "content_position": "bottomLeft",
               "subheading": "",
               "title": "",
               "button_1_text": "",
-              "button_2_text": ""
+              "button_1_link": "",
+              "button_2_text": "",
+              "button_2_link": ""
             }
           }
         },
@@ -430,42 +435,44 @@
         "settings": {
           "subheading": "",
           "title": "",
-          "html": "<p style=\"font-size: 2.4rem\">Appartement Témoin vous propose du mobilier et des objets uniques et intemporels.<\/p>"
+          "html": ""
         }
       },
       "1616421999bf4ac604": {
         "type": "collection-list",
         "blocks": {
-          "1616421999bf4ac604-0": {
-            "type": "collection",
-            "settings": {
-              "collection": "decoration-vintage",
-              "image": "shopify:\/\/shop_images\/FOUGERE2.jpg",
-              "image_alignment": "center center",
-              "content_position": "bottomLeft",
-              "subheading": "",
-              "title": "",
-              "button_text": "",
-              "apply_overlay": true
-            }
-          },
           "1616421999bf4ac604-1": {
             "type": "collection",
             "settings": {
               "collection": "vaisselle-vintage",
-              "image": "shopify:\/\/shop_images\/pichet-vintage-pol-chambost.jpg",
+              "image": "shopify:\/\/shop_images\/Sans_titre_1.png",
               "image_alignment": "center center",
               "content_position": "bottomLeft",
               "subheading": "",
               "title": "",
               "button_text": "",
-              "apply_overlay": true
+              "button_link": "",
+              "apply_overlay": false
+            }
+          },
+          "1616421999bf4ac604-0": {
+            "type": "collection",
+            "settings": {
+              "collection": "decoration-vintage",
+              "image": "shopify:\/\/shop_images\/Noel2021-1848.jpg",
+              "image_alignment": "center left",
+              "content_position": "bottomLeft",
+              "subheading": "",
+              "title": "",
+              "button_text": "",
+              "button_link": "",
+              "apply_overlay": false
             }
           }
         },
         "block_order": [
-          "1616421999bf4ac604-0",
-          "1616421999bf4ac604-1"
+          "1616421999bf4ac604-1",
+          "1616421999bf4ac604-0"
         ],
         "settings": {
           "image_size": "large",
@@ -482,8 +489,8 @@
           "16164220335f9ae374-0": {
             "type": "collection",
             "settings": {
-              "collection": "fougeres",
-              "title": "Fougères : les objets et le mobilier",
+              "collection": "zinzin",
+              "title": "Table de fête",
               "grid_items_count": 4,
               "button_text": "Découvrir"
             }
@@ -538,7 +545,7 @@
               "product_2": "hand-painted-algerian-vase-from-the-70s-vase-algrien-des-annes-70-peint-la-main",
               "product_2_horizontal_position": 64,
               "product_2_vertical_position": 48,
-              "product_3": "sp5yx418u4o2rgfabbq1qxx7atk17c",
+              "product_3": "corbeille-vintage-acrylique-brun",
               "product_3_horizontal_position": 37,
               "product_3_vertical_position": 39,
               "product_4": "monique-1998",
@@ -794,7 +801,7 @@
           "1618912973f5aa3d4d-0": {
             "type": "look",
             "settings": {
-              "image": "shopify:\/\/shop_images\/appartement-temoin-chapitre-fougeres-objets-vintage_10713df3-cfb7-435d-9ba8-2171ffcc41f4.jpg",
+              "image": "shopify:\/\/shop_images\/Zinzin-Livret-1.jpg",
               "dot_style": "light",
               "product_1": "",
               "product_1_horizontal_position": 80,
@@ -802,10 +809,10 @@
               "product_2": "",
               "product_2_horizontal_position": 75,
               "product_2_vertical_position": 51,
-              "product_3": "corbeille-vintage-osier-tresse",
+              "product_3": "",
               "product_3_horizontal_position": 83,
               "product_3_vertical_position": 77,
-              "product_4": "table-vintage-verre-treteaux-triangulaires",
+              "product_4": "",
               "product_4_horizontal_position": 60,
               "product_4_vertical_position": 71,
               "product_5": "",
@@ -816,12 +823,12 @@
           "339b2139-d545-4434-a9c7-3f312861f4b0": {
             "type": "look",
             "settings": {
-              "image": "shopify:\/\/shop_images\/appartement-temoin-chapitre-fougeres-objets-vintage-vue-2.jpg",
+              "image": "shopify:\/\/shop_images\/Zinzin-Livret-2.jpg",
               "dot_style": "light",
-              "product_1": "lampe-de-bureau-vintage-rouge",
+              "product_1": "",
               "product_1_horizontal_position": 64,
               "product_1_vertical_position": 60,
-              "product_2": "range-document-raymond-loewy",
+              "product_2": "",
               "product_2_horizontal_position": 75,
               "product_2_vertical_position": 60,
               "product_3": "",
@@ -838,9 +845,9 @@
           "4ae86923-8193-47e4-bde6-b8de07ea41b1": {
             "type": "look",
             "settings": {
-              "image": "shopify:\/\/shop_images\/appartement-temoin-chapitre-fougeres-objets-vintage-vue-3_73f8d706-8609-47d2-bce8-5451beb8998f.jpg",
+              "image": "shopify:\/\/shop_images\/Zinzin-Livret-3.jpg",
               "dot_style": "light",
-              "product_1": "pichet-vintage-orange-pol-chambost",
+              "product_1": "",
               "product_1_horizontal_position": 33,
               "product_1_vertical_position": 67,
               "product_2": "",
@@ -860,12 +867,12 @@
           "65d92cc7-e01a-49bf-b94c-b33eae058c98": {
             "type": "look",
             "settings": {
-              "image": "shopify:\/\/shop_images\/appartement-temoin-chapitre-fougeres-objets-vintage-vue-3.jpg",
+              "image": "shopify:\/\/shop_images\/Zinzin-Livret-4.jpg",
               "dot_style": "light",
-              "product_1": "bougeoirs-anciens-roche-granite",
+              "product_1": "duo-de-saliere-et-poivriere-vintage-richard-nissen",
               "product_1_horizontal_position": 33,
               "product_1_vertical_position": 70,
-              "product_2": "metallic-candlesticks",
+              "product_2": "",
               "product_2_horizontal_position": 74,
               "product_2_vertical_position": 51,
               "product_3": "",
@@ -882,12 +889,12 @@
           "708b33c4-a577-4021-abf8-6e46cd2ed658": {
             "type": "look",
             "settings": {
-              "image": "shopify:\/\/shop_images\/appartement-temoin-chapitre-fougeres-objets-vintage-vue-4.jpg",
+              "image": "shopify:\/\/shop_images\/Zinzin-Livret-5.jpg",
               "dot_style": "light",
-              "product_1": "tables-basses-gigognes-vintage-plexiglas-brun-annees-70",
-              "product_1_horizontal_position": 41,
-              "product_1_vertical_position": 63,
-              "product_2": "bougeoirs-vintage-verre-transparent",
+              "product_1": "grande-coupe-bleu-turquoise-colombins-torsades",
+              "product_1_horizontal_position": 23,
+              "product_1_vertical_position": 35,
+              "product_2": "",
               "product_2_horizontal_position": 81,
               "product_2_vertical_position": 74,
               "product_3": "",
@@ -904,12 +911,12 @@
           "3fc8bc27-9a68-4e1c-899e-c143f871ec06": {
             "type": "look",
             "settings": {
-              "image": "shopify:\/\/shop_images\/appartement-temoin-chapitre-fougeres-objets-vintage-vue-5.jpg",
+              "image": "shopify:\/\/shop_images\/Zinzin-Livret-6.jpg",
               "dot_style": "light",
-              "product_1": "grand-tapis-berbere-raye",
+              "product_1": "couleuvre-france-service-a-the-cafe",
               "product_1_horizontal_position": 30,
               "product_1_vertical_position": 37,
-              "product_2": "service-a-vaisselle-jaune-faiencerie-salins-france",
+              "product_2": "",
               "product_2_horizontal_position": 71,
               "product_2_vertical_position": 68,
               "product_3": "",
@@ -926,14 +933,14 @@
           "fbc32091-e897-4039-8d40-d8add2fda018": {
             "type": "look",
             "settings": {
-              "image": "shopify:\/\/shop_images\/appartement-temoin-chapitre-fougeres-objets-vintage-vue-6.jpg",
+              "image": "shopify:\/\/shop_images\/Zinzin-Livret-7.jpg",
               "dot_style": "light",
-              "product_1": "lampe-de-bureau-vintage-gammalux-annees-70",
+              "product_1": "vase-vintage-raye-vert-et-blanc",
               "product_1_horizontal_position": 28,
               "product_1_vertical_position": 61,
-              "product_2": "",
-              "product_2_horizontal_position": 49,
-              "product_2_vertical_position": 54,
+              "product_2": "pichet-vintage-raye-vert-blanc",
+              "product_2_horizontal_position": 43,
+              "product_2_vertical_position": 48,
               "product_3": "",
               "product_3_horizontal_position": 72,
               "product_3_vertical_position": 53,
@@ -948,11 +955,11 @@
           "23367dc0-59eb-4784-a85b-e61a8f091569": {
             "type": "look",
             "settings": {
-              "image": "shopify:\/\/shop_images\/appartement-temoin-chapitre-fougeres-objets-vintage-vue-7.jpg",
+              "image": "shopify:\/\/shop_images\/Zinzin-Livret-8.jpg",
               "dot_style": "light",
-              "product_1": "assiettes-vintage-cordage-salins-france-annees-50",
-              "product_1_horizontal_position": 70,
-              "product_1_vertical_position": 54,
+              "product_1": "sculpture-vintage-tete-appollon-annees-80",
+              "product_1_horizontal_position": 41,
+              "product_1_vertical_position": 43,
               "product_2": "",
               "product_2_horizontal_position": 50,
               "product_2_vertical_position": 50,
@@ -970,11 +977,11 @@
           "b89e609b-73be-4881-b99d-8973e98fe12f": {
             "type": "look",
             "settings": {
-              "image": "shopify:\/\/shop_images\/appartement-temoin-chapitre-fougeres-objets-vintage-vue-8.jpg",
+              "image": "shopify:\/\/shop_images\/Zinzin-Livret-9.jpg",
               "dot_style": "light",
-              "product_1": "service-a-vaiselle-vintage-nord-africain-rose",
-              "product_1_horizontal_position": 78,
-              "product_1_vertical_position": 66,
+              "product_1": "vase-ovoide-parme",
+              "product_1_horizontal_position": 54,
+              "product_1_vertical_position": 46,
               "product_2": "",
               "product_2_horizontal_position": 71,
               "product_2_vertical_position": 18,
@@ -989,64 +996,42 @@
               "product_5_vertical_position": 85
             }
           },
-          "80aa499b-19e9-4a60-9ec7-42848f73341c": {
+          "fd0ce8bd-8958-468d-a17c-84f43f4392a5": {
             "type": "look",
             "settings": {
-              "image": "shopify:\/\/shop_images\/appartement-temoin-chapitre-fougeres-objets-vintage-vue-10.jpg",
+              "image": "shopify:\/\/shop_images\/GrandZinzin_LivretWeb10.jpg",
               "dot_style": "light",
-              "product_1": "lampe-medicis-vintage",
-              "product_1_horizontal_position": 79,
-              "product_1_vertical_position": 42,
-              "product_2": "table-basse-vintage-moderniste-annees-60",
-              "product_2_horizontal_position": 81,
-              "product_2_vertical_position": 72,
-              "product_3": "",
-              "product_3_horizontal_position": 81,
-              "product_3_vertical_position": 72,
-              "product_4": "",
-              "product_4_horizontal_position": 85,
-              "product_4_vertical_position": 85,
-              "product_5": "",
-              "product_5_horizontal_position": 85,
-              "product_5_vertical_position": 85
-            }
-          },
-          "5b1cc086-56ba-40b5-aedf-713d238403ee": {
-            "type": "look",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/appartement-temoin-chapitre-fougeres-objets-vintage-vue-12.jpg",
-              "dot_style": "light",
-              "product_1": "pichet-vintage-jaune-faience-orchies-france",
-              "product_1_horizontal_position": 69,
-              "product_1_vertical_position": 36,
-              "product_2": "saladier-vintage-abstrait-la-borne-france",
-              "product_2_horizontal_position": 79,
-              "product_2_vertical_position": 52,
-              "product_3": "",
-              "product_3_horizontal_position": 85,
-              "product_3_vertical_position": 85,
-              "product_4": "",
-              "product_4_horizontal_position": 85,
-              "product_4_vertical_position": 85,
-              "product_5": "",
-              "product_5_horizontal_position": 85,
-              "product_5_vertical_position": 85
-            }
-          },
-          "754a7dd7-f27b-4527-abcb-4dd5b2af5d7b": {
-            "type": "look",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/appartement-temoin-chapitre-fougeres-objets-vintage-vue-13.jpg",
-              "dot_style": "light",
-              "product_1": "",
-              "product_1_horizontal_position": 15,
-              "product_1_vertical_position": 15,
+              "product_1": "grands-verres-a-pied-vintage-bleu-cobalt",
+              "product_1_horizontal_position": 26,
+              "product_1_vertical_position": 50,
               "product_2": "",
               "product_2_horizontal_position": 50,
               "product_2_vertical_position": 50,
               "product_3": "",
               "product_3_horizontal_position": 85,
               "product_3_vertical_position": 85,
+              "product_4": "",
+              "product_4_horizontal_position": 85,
+              "product_4_vertical_position": 85,
+              "product_5": "",
+              "product_5_horizontal_position": 85,
+              "product_5_vertical_position": 85
+            }
+          },
+          "80aa499b-19e9-4a60-9ec7-42848f73341c": {
+            "type": "look",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Zinzin-Livret-10.jpg",
+              "dot_style": "light",
+              "product_1": "",
+              "product_1_horizontal_position": 79,
+              "product_1_vertical_position": 42,
+              "product_2": "",
+              "product_2_horizontal_position": 81,
+              "product_2_vertical_position": 72,
+              "product_3": "",
+              "product_3_horizontal_position": 81,
+              "product_3_vertical_position": 72,
               "product_4": "",
               "product_4_horizontal_position": 85,
               "product_4_vertical_position": 85,
@@ -1066,17 +1051,16 @@
           "fbc32091-e897-4039-8d40-d8add2fda018",
           "23367dc0-59eb-4784-a85b-e61a8f091569",
           "b89e609b-73be-4881-b99d-8973e98fe12f",
-          "80aa499b-19e9-4a60-9ec7-42848f73341c",
-          "5b1cc086-56ba-40b5-aedf-713d238403ee",
-          "754a7dd7-f27b-4527-abcb-4dd5b2af5d7b"
+          "fd0ce8bd-8958-468d-a17c-84f43f4392a5",
+          "80aa499b-19e9-4a60-9ec7-42848f73341c"
         ],
         "settings": {
           "subheading": "",
           "title": "",
           "show_mobile_product_info": false,
           "product_color": "#000000",
-          "text_block_title": "Fougères",
-          "text_block_content": "chapitre 10 — Juin 2021\nphotographie : Romain Dumas\nset design : Maxime Chaiblaine"
+          "text_block_title": "zinzin",
+          "text_block_content": "chapitre 11 — Décembre 2021\nillustrations : Romain Dumas\nphotographie : Romain Dumas\nset design : Maxime Chaiblaine"
         }
       },
       "image-with-text-block-a-propos": {
@@ -1086,8 +1070,9 @@
           "title": "à propos",
           "image": "shopify:\/\/shop_images\/a-propos-site_44a359df-7f34-4e94-a413-0786543bccc7.jpg",
           "image_position": "right",
-          "content": "<p>Appartement Témoin est une marque de décoration mêlant sélections vintage et créations exclusives.<br\/><\/p><p>Appartement Témoin vous propose des objets anciens de différentes époques, sélectionnés pour leurs styles singuliers, allant du designer célèbre à l'auteur méconnu. <br\/>Appartement Témoin, c’est aussi un état d’esprit : en associant des meubles et objets chinés à des créations à partir de matériaux recyclés, nous invitons à une nouvelle manière de rêver son intérieur autour de l’unique, de l’insolite, mais aussi de l’imparfait.<\/p><p>Chaque nouvelle collection est une nouvelle histoire. Au fil des CHAPITRES, découvrez de nouvelles sélections d’objets et de mobilier mis en scène et en imaginaire. <\/p><p>Pour tout renseignement, contactez-nous par mail à boutique@appartementtemoin.com.<\/p>",
-          "link_text": ""
+          "content": "<p>Appartement Témoin est une marque de décoration mêlant sélection vintage et créations exclusives. <br\/><br\/>Nous avons à cœur de vous proposer des objets anciens de différentes époques, sélectionnés pour leur style singulier, allant du designer célèbre à l’auteur méconnu. <br\/><br\/>Appartement Témoin, c’est aussi un état d’esprit : en associant des meubles et objets chinés à des créations en matériaux recyclés, nous invitons à une nouvelle manière de rêver son intérieur autour de l’unique, de l’insolite, mais aussi de l’imparfait.<\/p><p>Chaque nouvelle collection est une nouvelle histoire.<br\/>Au fil des CHAPITRES, découvrez de nouvelles sélections d'objets et de mobilier mis en scène et en imaginaire.<\/p>",
+          "link_text": "",
+          "link_url": ""
         }
       },
       "cart-template": {
@@ -1637,68 +1622,72 @@
       "16221269157fe6da24": {
         "type": "slideshow-mobile",
         "blocks": {
-          "16221269157fe6da24-0": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/appartement-temoin-chapitre-fougeres-objets-vintage-mobile.jpg",
-              "mobile_image": "shopify:\/\/shop_images\/appartement-temoin-chapitre-fougeres-objets-vintage-mobile_590da250-b2d8-4cfc-9507-2029e4dbc733.jpg",
-              "apply_overlay": false,
-              "content_position": "bottomCenter",
-              "subheading": "",
-              "title": "",
-              "button_1_text": "voir la collection",
-              "button_1_link": "shopify:\/\/collections\/fougeres",
-              "button_2_text": ""
-            }
-          },
-          "16221269157fe6da24-1": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/appartement-temoin-chapitre-fougeres-objets-vintage-mobile-vue-2.jpg",
-              "mobile_image": "shopify:\/\/shop_images\/appartement-temoin-chapitre-fougeres-objets-vintage-mobile-vue-2_48a59c62-87e8-41b9-93f9-c68f4685aa3c.jpg",
-              "apply_overlay": false,
-              "content_position": "bottomCenter",
-              "subheading": "",
-              "title": "",
-              "button_1_text": "voir la collection",
-              "button_1_link": "shopify:\/\/collections\/fougeres",
-              "button_2_text": ""
-            }
-          },
           "02379aca-0177-4711-ac0b-9f51ef52fd0c": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/appartement-temoin-chapitre-fougeres-objets-vintage-mobile-vue-3.jpg",
-              "mobile_image": "shopify:\/\/shop_images\/appartement-temoin-chapitre-fougeres-objets-vintage-mobile-vue-3_11075a3d-e7d2-4291-9e1d-c2975c37053d.jpg",
+              "image": "shopify:\/\/shop_images\/2.png",
+              "mobile_image": "shopify:\/\/shop_images\/27.jpg",
               "apply_overlay": false,
               "content_position": "bottomCenter",
               "subheading": "",
               "title": "",
               "button_1_text": "voir la collection",
-              "button_1_link": "shopify:\/\/collections\/fougeres",
-              "button_2_text": ""
+              "button_1_link": "shopify:\/\/collections\/zinzin",
+              "button_2_text": "",
+              "button_2_link": ""
+            }
+          },
+          "d2b189b1-7e66-40ac-8565-4fae5da6c1d1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/33.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/33.jpg",
+              "apply_overlay": true,
+              "content_position": "bottomCenter",
+              "subheading": "",
+              "title": "",
+              "button_1_text": "voir la collection",
+              "button_1_link": "shopify:\/\/collections\/zinzin",
+              "button_2_text": "",
+              "button_2_link": ""
             }
           },
           "ffa6522a-e71c-4aef-a457-a0382ac68e4e": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/appartement-temoin-chapitre-fougeres-objets-vintage-mobile-vue-4.jpg",
-              "mobile_image": "shopify:\/\/shop_images\/appartement-temoin-chapitre-fougeres-objets-vintage-mobile-vue-4_7b6f1ffd-7ea1-4403-839a-2e5aa2cdaa7e.jpg",
+              "image": "shopify:\/\/shop_images\/1.png",
+              "mobile_image": "shopify:\/\/shop_images\/25.jpg",
               "apply_overlay": false,
               "content_position": "bottomCenter",
               "subheading": "",
               "title": "",
               "button_1_text": "voir la collection",
-              "button_1_link": "shopify:\/\/collections\/fougeres",
-              "button_2_text": ""
+              "button_1_link": "shopify:\/\/collections\/zinzin",
+              "button_2_text": "",
+              "button_2_link": ""
+            }
+          },
+          "67f85141-0081-4a77-9c9f-d2b9aaae9f3e": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/COLORS12.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/COLORS12.jpg",
+              "apply_overlay": true,
+              "content_position": "bottomCenter",
+              "subheading": "",
+              "title": "",
+              "button_1_text": "voir la collection",
+              "button_1_link": "shopify:\/\/collections\/zinzin",
+              "button_2_text": "",
+              "button_2_link": ""
             }
           }
         },
         "block_order": [
-          "16221269157fe6da24-0",
-          "16221269157fe6da24-1",
           "02379aca-0177-4711-ac0b-9f51ef52fd0c",
-          "ffa6522a-e71c-4aef-a457-a0382ac68e4e"
+          "d2b189b1-7e66-40ac-8565-4fae5da6c1d1",
+          "ffa6522a-e71c-4aef-a457-a0382ac68e4e",
+          "67f85141-0081-4a77-9c9f-d2b9aaae9f3e"
         ],
         "settings": {
           "show_fullscreen": false,
@@ -1709,15 +1698,30 @@
           "button_color": "#363636",
           "button_background": "#ffffff"
         }
+      },
+      "1637059284a24742c2": {
+        "type": "image-with-text-block",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/14_358ede35-6e1c-4e68-aaee-443151ce2cda.jpg",
+          "background": "#ffffff",
+          "text_color": "#1c1b1b",
+          "block_size": "normal",
+          "title": "",
+          "content": "<p><strong>APPARTEMENT TÉMOIN X GALERIES LAFAYETTE<\/strong><\/p>",
+          "button_label": "DÉCOUVRIR",
+          "button_link": "https:\/\/appartementtemoin.myshopify.com\/pages\/appartement-temoin-galeries-lafayette",
+          "show_parallax": true
+        }
       }
     },
     "content_for_index": [
       "slideshow",
-      "16164219358990a602",
-      "1616421999bf4ac604",
+      "16164220335f9ae374",
+      "1637059284a24742c2",
       "161891297359d781b5",
       "16221269157fe6da24",
-      "16164220335f9ae374"
+      "16164219358990a602",
+      "1616421999bf4ac604"
     ]
   },
   "presets": {

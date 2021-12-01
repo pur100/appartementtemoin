@@ -230,7 +230,7 @@ span {
 }
 
 .yellow {
-  background-color: #ffe000 !important;
+  background-color: #f9c5b8 !important;
 }
 
 .Header__MainNav .Heading.u-h6 {
@@ -277,11 +277,11 @@ span {
 }
 
 .Header--index * {
-  color: #ffe000 !important;
+  color: #f9c5b8 !important;
 }
 
 .yellow .Header__CartCount  {
-  color: #ffe000  !important;
+  color: #f9c5b8  !important;
   background: black !important;
 }
 
@@ -299,27 +299,27 @@ span {
 
 .Header--down .Header__CartCount {
   color: black !important;
-  background: #ffe000 !important;
+  background: #f9c5b8 !important;
 }
 
 .Header--black .Header__CartCount {
   color: black !important;
-  background: #ffe000 !important;
+  background: #f9c5b8 !important;
 }
 
 .Header--initialized.yellow .Header__CartCount {
-  color: #ffe000 !important;
+  color: #f9c5b8 !important;
   background: black !important;
 }
 
 .Header--initialized .Header__CartCount {
-  background: #ffe000;
+  background: #f9c5b8;
   color: black !important;
 }
 
 .Header--transparent .Header__CartCount {
   color: black !important;
-  background: #ffe000 !important;
+  background: #f9c5b8 !important;
 }
 
 #shopify-section-slideshow .flickity-viewport {
@@ -908,8 +908,8 @@ span {
     display: block !important;
   }
   .Header__CartCount {
-    padding: 2px 5px 3px 7px !important;
-    font-size: 12px !important;
+    padding: 3px 5px 2px 5px !important;
+    font-size: 7px !important;
   }
   .CollectionMain .ProductList--grid, #shopify-section-16164220335f9ae374 .ProductList--grid {
     padding: 0 3rem 0 1rem !important;
@@ -957,7 +957,7 @@ span {
   }
   .SidebarMenu {
     width: 100%;
-    background: #ffe000;
+    background: #f9c5b8;
   }
   .SidebarMenu .Heading {
     color: black !important;
